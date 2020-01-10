@@ -1,0 +1,91 @@
+/* @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)  { */
+
+* {
+    /* padding: 10px 2px 2px 2px; */
+    margin: 0;
+    width: max-content;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;    
+}
+
+header {
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    border: 2px solid red;
+}
+
+h1::before {
+    content: "course title";
+    background-color: red;
+    
+    font-size: 10px;
+    font-family: monospace;
+    position: absolute;
+    color: white;
+    padding: 0px 2px 3px 0px;
+
+}
+h2 {
+    font-size: 1.4em;
+
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#hamburger {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    width: max-content;
+    margin: 0 auto;
+}
+
+.patty {
+    background-color: gray;
+    width: 20px;
+    height: 3px;
+    margin: 3px 0;
+    border-radius: 1px;
+
+}
+
+#dropdown-menu {
+
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid black;
+    
+    list-style: none;
+    margin: 0px 0;
+    
+}
+
+.yolo-style {
+    background-color: red;
+    font-size: 10px;
+    font-family: monospace;
+    position: absolute;
+    color: white;
+    padding: 0px 2px 3px 0px;
+    border: 2px solid white;
+}
+
+
+/* } */
