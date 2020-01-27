@@ -15,7 +15,9 @@ console.log(yolo);
 for(let i = 0; i < yolo.length; i++) {
     let e = yolo[i];
     let yoloLabel = document.createElement("h6");
-    yoloLabel.innerHTML = "placeholder";
+    let randomIndex = Math.floor(Math.random()*(splitLabels.length));
+    console.log(splitLabels.length);
+    yoloLabel.innerHTML = splitLabels[randomIndex];
     yoloLabel.classList.add("yolo-style");
     e.insertAdjacentElement("beforebegin", yoloLabel);
     

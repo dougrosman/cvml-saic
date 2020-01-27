@@ -11,7 +11,7 @@
     }
     
     body {
-        font-family: 'Helvetica', Arial, sans-serif;    
+        font-family: 'Roboto', sans-serif;    
     }
     
     header {
@@ -33,18 +33,19 @@
     }
     
     h1, h2 {
-        text-align: center;
+        /* text-align: center; */
     }
     
     #hamburger {
         /* width: max-content; */
+        display: none;
     }
     
     .patty {
-        border: 2px solid gray;
-        width: 20px;
+        border: 1px solid gray;
+        width: 10px;
         margin: 2px auto;
-        border-radius: 1px;
+        border-radius: 2px;
     
     }
     
@@ -58,6 +59,7 @@
         justify-content: center;
         height: 20px;
         list-style: none;
+        margin: -4px 0;
 
         
     }
