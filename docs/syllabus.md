@@ -70,18 +70,16 @@ Open source tools available online use a variety of coding languages and framewo
 
 
 ### Class Text(s)
-There is no single class text, though there are several online books (and available for purchase) that we’ll reference on occasion.
-openFrameworks
-ofBook
-Computer Vision
-Computer Vision: Algorithms and Applications
-Practical OpenCV
-Learning OpenCV : computer vision with the OpenCV library
-Machine Learning
-ML4A In progress book
-Deep Learning
-Neural Networks and Deep Learning
-Reading and other Resources Posted on the course website.
+There is no single class text, though there are online books, guides and articles we'll reference throughout the semester.
+
+#### Computer Vision
+* <a href="https://openframeworks.cc/ofBook/chapters/image_processing_computer_vision.html" target="blank">ofBook: Image Processing and Computer Vision</a>
+* <a href="http://www-cs.ccny.cuny.edu/~wolberg/capstone/opencv/LearningOpenCV.pdf" target="blank">Learning OpenCV : computer vision with the OpenCV</a> library
+#### Machine Learning
+* <a href="https://ml4a.github.io/" target="blank">ML4A (Machine Learning for Artists)</a>
+* <a href="http://www.deeplearningbook.org/" target="blank">Deep Learning (Ian Goodfellow, Yoshua Bengio, Aaron Courville)</a>
+* <a href="http://neuralnetworksanddeeplearning.com/" target="blank">Neural Networks and Deep Learning</a>
+
 
 ### End of semester exhibition (tentative)
 Depending on availability, final projects will be included in an exhibition at the end of the semester.
