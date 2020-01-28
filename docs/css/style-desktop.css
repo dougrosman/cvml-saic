@@ -24,7 +24,7 @@
     }
 
     a:hover {
-        color: darkslategrey;
+        text-decoration: underline dotted;
     }
     
     h1 {
@@ -62,7 +62,7 @@
         
         width: 70vw;
         height: 98vh;
-        margin: 20px 80px;
+        margin: 30px 80px;
         /* border: 2px solid pink; */
     }
 
@@ -103,4 +103,10 @@
         color: hsla(0, 0%, 0%, 0);
         border: 3px solid hsla(10, 0%, 0%, 0);
         position: relative;
+    }
+
+
+    h5.work {
+        margin: 5px 0 5px 20px;
+        font-size: .8em;
     }
