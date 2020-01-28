@@ -25,8 +25,9 @@ Sal Moreno
 Computer vision allows machines to see and understand their environment. This course will equip students with the practical skills and critical theory needed to both employ and critically engage these techniques. Real-time body tracking, facial recognition and gesture analysis using RGB+D. Artificial intelligence and machine learning will be emphasized. Students will explore and critique contemporary applications ranging from automated mass surveillance to interactive installations. A final project will build on in- class workshops, technical exercises, critical readings and discussions.
 
 ### Course Goals
-* Working and applied knowledge “classical” computer vision techniques.
-* Working and applied knowledge of modern computer vision techniques that leverage machine learning.
+* Working and applied knowledge of creative coding practices
+* Working and applied knowledge of “classical” computer vision techniques.
+* Working and applied knowledge of "modern" computer vision techniques that leverage machine learning.
 
 ### Course Values
 * Sharing / Open
@@ -40,21 +41,35 @@ Computer vision allows machines to see and understand their environment. This co
 Students will engage in individual in-lab and home assignments, class presentations, lectures, discussions, assigned readings, group and individual projects and desk critiques. Visiting artists / faculty may enhance the experience and offer additional perspectives.
 
 ### Class Structure (Typical)
-9:00 - 9:30 : Look at new artists, catch up on the week’s CV/ML headlines.
-9:30 - 10:15 : Lecture Part 1.
-10:15 - 10:30 : Break
+9:00 - 9:30 : Look at new artists, catch up on the week’s CV/ML headlines.<br>
+9:30 - 10:15 : Lecture Part 1.<br>
+10:15 - 10:30 : Break<br>
+10:30 - 12:00 : Lecture Part 2.<br>
+12:00 - 01:00 : Lunch<br>
+01:00 - 02:30 : Hands-on Workshop.<br>
+02:30 - 02:45 : Break<br>
+02:45 - 04:00 : Open Studio (Homework, Projects, Discussion, etc).<br>
 
-10:30 - 12:00 : Lecture Part 2.
 
-12:00 - 01:00 : Lunch
-01:00 - 02:30 : Hands-on Workshop.
-02:30 - 02:45 : Break
-02:45 - 04:00 : Open Studio (Homework, Projects, Discussion, etc).
-Assignments
-The first 66% of the course will be built on well-constrained code-based assignments. These assignments have clear goals and are intended to build confidence and code competency. The last 34% of the course is focused on integrating these techniques, technologies and critical discussions with your existing creative / research practice. The final project will be part of an exhibition.
-Creative Coding Tools
-We will be doing most of our work in C++ with openFrameworks. Most modern computer vision and machine learning tools are built with C++ at their core. That said, many online examples use Python to interact with the same code. We will primarily focus on well- documented libraries that well-documented and easily compatible with openFrameworks (e.g. OpenCV and dlib).
-Class Text(s)
+### Assignments
+The first 10 weeks of the course will be built on well-constrained code-based assignments. These assignments have clear goals and are intended to build confidence and code competency. The last 5 weeks of the course are focused on integrating these techniques, technologies and critical discussions with your existing creative / research practice. 
+
+
+### Creative Coding Tools
+We will be doing most of our work with __P5.js__ on the web, with potential for some Processing and C++/openFrameworks. While many modern computer vision and machine learning tools are built with C++ at their core, many powerful creative tools have become available that allow web-based applications to utilize computer vision and machine learning techniques.
+
+* <a href="https://p5js.org/" target="blank">P5.js</a>
+* <a href="https://ml5js.org/" target="blank">ml5.js</a>
+* <a href="https://processing.org/" target="blank">Processing</a>
+* <a href="https://openframeworks.cc/" target="blank">openFrameworks</a>
+* <a href="http://www.wekinator.org/" target="blank">Wekinator</a>
+* <a href="https://runwayml.com/" target="blank">RunwayML</a>
+* <a href="https://teachablemachine.withgoogle.com/" target="blank">Teachable Machine</a>
+
+Open source tools available online use a variety of coding languages and frameworks. Students are encouraged to find tools outside of what is introduced in class when composing final projects.
+
+
+### Class Text(s)
 There is no single class text, though there are several online books (and available for purchase) that we’ll reference on occasion.
 openFrameworks
 ofBook
@@ -67,6 +82,9 @@ ML4A In progress book
 Deep Learning
 Neural Networks and Deep Learning
 Reading and other Resources Posted on the course website.
+
+### End of semester exhibition (tentative)
+Depending on availability, final projects will be included in an exhibition at the end of the semester.
                       
  Materials
 Provided by the student as needed.
