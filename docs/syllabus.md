@@ -10,47 +10,42 @@ Thursday 9am-4pm
 MacLean 401
 
 #### Instructor
-Doug Rosman
+Doug Rosman, <a href="https://dougrosman.github.io/cvml-saic" target="blank">dougrosman.com</a>
+
+#### TA
+Sal Moreno
 
 #### Course website
 <a href="https://dougrosman.github.io/cvml-saic" target="blank">https://dougrosman.github.io/cvml-saic</a>
 
 #### Slack channel
-General Code Discussion (Public)
-https://ats.community/ (Post your questions in the appropriate category). Class Website
-http://saic-ats.github.io/ARTTECH-3039/
-Course Repository (code examples, etc)
-https://github.com/SAIC-ATS/ARTTECH-3039/
-Course Assignments
-https://github.com/SAIC-ARTTECH-3039-5039
-Course openFrameworks Addon
-https://github.com/SAIC-ATS/ofxARTTECH-3039
-TA
-Sal Moreno
-Instructor Bio
-Christopher Baker is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks. Christopher’s work has been presented worldwide and he contributes to the open source community at http://github.com/bakercp.
-TA Bio
-Amay Kataria (b. 1990) is a global artist intersecting technology with modern art mediums for self-expression. Born and brought up in Delhi, the capitol city of India, he developed artistic tendencies at the age of 14, when he started learning instruments like guitar and harmonica. After placing 1st in Future Cities India 2020 in 2007, a competition to design futuristic road architecture for Commonwealth Games held in India in 2010, his team of 4 students represented India in Washington D.C. to present their designs. During that trip, he visited U.S. universities and decided to pursue his college education abroad. At the age of 18, he moved to Virginia Tech to pursue Computer Engineering. While studying engineering, he took classes in philosophy, music appreciation, interdisciplinary product design, robotics, hardware-software, and embedded systems. After graduating from Tech in 2012, Amay joined Windows team in Microsoft as a Software Engineer in Seattle, WA.
-He explored his passion for arts through music production, attending creative writing workshops, and painting & drawing lessons in Seattle Community College and Gage Academy of Arts. In 2014, he moved to Skype4Life project in Microsoft under the mentorship of Eric Traut. During this time, he collaborated with designers, product managers, and led the development of several high-impact features for the brand new Skype app. He also participated in creative hackathons to work with modern art mediums like Augmented Reality, Artificial Intelligence, and Sound to expand his repertoire of creative mediums. Ultimately, while attending Burning Man in Nevada in 2015, when his artistic tendencies were at peak, Amay decided to pursue graduate education in fine arts. He began collating a portfolio for a MFA and left his job at Microsoft in Summer, 2017 to start school in Fall, 2017. Currently, he is pursuing a MFA in Art & Technology Studies at SAIC and is expected to graduate in 2019.
-Course Description
-Computer vision allows machines to see and understand their environment. This course will equip students with the practical skills and critical theory needed to both employ and critically engage these techniques. Real-time body tracking, facial recognition and gesture analysis using RGB+D and LiDAR sensors, artificial intelligence and machine learning will be emphasized. Students will explore and
-  
- critique contemporary applications ranging from automated mass surveillance to interactive installations. A final project will build on in- class workshops, technical exercises, critical readings and discussions.
-Course Goals
-Working and applied knowledge “classical” computer vision techniques.
-Working and applied knowledge of modern computer vision techniques that leverage machine learning.
-Course Values
-Sharing / Open
-Documentation
-DIWO
-Publish
-Cult of Done
-Methodology
+<a href="https://dougrosman.github.io/cvml-saic" target="blank">cvmlsp20.slack.com</a>
+
+### Course Description
+Computer vision allows machines to see and understand their environment. This course will equip students with the practical skills and critical theory needed to both employ and critically engage these techniques. Real-time body tracking, facial recognition and gesture analysis using RGB+D. Artificial intelligence and machine learning will be emphasized. Students will explore and critique contemporary applications ranging from automated mass surveillance to interactive installations. A final project will build on in- class workshops, technical exercises, critical readings and discussions.
+
+### Course Goals
+* Working and applied knowledge “classical” computer vision techniques.
+* Working and applied knowledge of modern computer vision techniques that leverage machine learning.
+
+### Course Values
+* Sharing / Open
+    * Documentation
+    * <a href="http://archive.furtherfield.org/projects/diwo-do-it-others-resourceDIWO" target="blank">DIWO (Do It With Others)</a>
+    * Publish
+    * <a href="https://medium.com/@bre/the-cult-of-done-manifesto-724ca1c2ff13" target="blank">Cult of Done Manifesto</a>
+
+### Methodology
+
 Students will engage in individual in-lab and home assignments, class presentations, lectures, discussions, assigned readings, group and individual projects and desk critiques. Visiting artists / faculty may enhance the experience and offer additional perspectives.
-Class Structure (Typical)
-9:00 - 9:30 : Look at new artists, catch up on the week’s CV/ML headlines. 9:30 - 10:15 : Lecture Part 1.
+
+### Class Structure (Typical)
+9:00 - 9:30 : Look at new artists, catch up on the week’s CV/ML headlines.
+9:30 - 10:15 : Lecture Part 1.
 10:15 - 10:30 : Break
+
 10:30 - 12:00 : Lecture Part 2.
+
 12:00 - 01:00 : Lunch
 01:00 - 02:30 : Hands-on Workshop.
 02:30 - 02:45 : Break
