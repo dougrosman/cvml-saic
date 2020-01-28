@@ -3,28 +3,40 @@
 #### Semester, Year
 Spring, 2020
 
-#### Meeting Times
+### Meeting Times
 Thursday 9am-4pm
 
-#### Meeting Location
+### Meeting Location
 MacLean 401
 
-#### Instructor
-Doug Rosman, <a href="https://dougrosman.github.io/cvml-saic" target="blank">dougrosman.com</a>
+### Instructor
+Doug Rosman <br>
+<a href="https://dougrosman.github.io/cvml-saic" target="blank">dougrosman.com</a><br>
+drosman@saic.edu
 
-#### TA
-Sal Moreno
+### TA
+Sal Moreno <br>
+smoreno4@saic.edu
 
-#### Course website
-<a href="https://dougrosman.github.io/cvml-saic" target="blank">https://dougrosman.github.io/cvml-saic</a>
+### Course website
+<a href="https://dougrosman.github.io/cvml-saic" target="blank">https://dougrosman.github.io/cvml-saic</a><br>
+__All course material including assignments, weekly code exercises, in class resources, etc. will be posted on the class website, NOT on Canvas__
+
+### Canvas
+<a href="https://saic.instructure.com/courses/2645666" target="blank">https://saic.instructure.com/courses/2645666</a><br>
+__Please make sure you are able to receive Canvas notifications. I will be posting announcements through Canvas to reach the entire class__
+
 
 #### Slack channel
-<a href="https://dougrosman.github.io/cvml-saic" target="blank">cvmlsp20.slack.com</a>
+<a href="https://dougrosman.github.io/cvml-saic" target="blank">cvmlsp20.slack.com</a><br>
+__The Slack channel exists as a class community resource. Post code/general questions, resources, or whatever cool stuff you find__
 
-### Course Description
-Computer vision allows machines to see and understand their environment. This course will equip students with the practical skills and critical theory needed to both employ and critically engage these techniques. Real-time body tracking, facial recognition and gesture analysis using RGB+D. Artificial intelligence and machine learning will be emphasized. Students will explore and critique contemporary applications ranging from automated mass surveillance to interactive installations. A final project will build on in- class workshops, technical exercises, critical readings and discussions.
+## Course Description
+Computer vision allows machines to see and understand their environment. This course will equip students with the practical skills and critical theory needed to both employ and critically engage these techniques. Real-time body tracking, object and facial recognition, and gesture analysis. Artificial Intelligence and machine learning will be emphasized. Machine learning applications related to text and sound and reinforcement learning will also be discussed, although in-class exercises will not focus on them.<br>
 
-### Course Goals
+Students will explore and critique contemporary applications ranging from automated mass surveillance to interactive installations. A final project will build on in-class workshops, technical exercises, critical readings and discussions.
+
+## Course Goals
 * Working and applied knowledge of creative coding practices
 * Working and applied knowledge of “classical” computer vision techniques.
 * Working and applied knowledge of "modern" computer vision techniques that leverage machine learning.
@@ -36,7 +48,7 @@ Computer vision allows machines to see and understand their environment. This co
     * Publish
     * <a href="https://medium.com/@bre/the-cult-of-done-manifesto-724ca1c2ff13" target="blank">Cult of Done Manifesto</a>
 
-### Methodology
+## Methodology
 
 Students will engage in individual in-lab and home assignments, class presentations, lectures, discussions, assigned readings, group and individual projects and desk critiques. Visiting artists / faculty may enhance the experience and offer additional perspectives.
 
@@ -52,7 +64,10 @@ Students will engage in individual in-lab and home assignments, class presentati
 
 
 ### Assignments
-The first 10 weeks of the course will be built on well-constrained code-based assignments. These assignments have clear goals and are intended to build confidence and code competency. The last 5 weeks of the course are focused on integrating these techniques, technologies and critical discussions with your existing creative / research practice. 
+The first 10 weeks of the course will be built on well-constrained code-based assignments. These assignments have clear goals and are intended to build confidence and code competency:
+* Weeks 1-4 weeks emphasize code and "classic" computer vision techniques.
+* Weeks 5-10 emphasize machine learning approaches and data acquisition/curation.
+* Weeks 11-15 week of the course are focused on integrating these techniques, technologies and critical discussions with your existing creative / research practice. 
 
 
 ### Creative Coding Tools
@@ -81,187 +96,134 @@ There is no single class text, though there are online books, guides and article
 * <a href="http://neuralnetworksanddeeplearning.com/" target="blank">Neural Networks and Deep Learning</a>
 
 
-### End of semester exhibition (tentative)
+## End of semester exhibition (tentative)
 Depending on availability, final projects will be included in an exhibition at the end of the semester.
                       
- Materials
-Provided by the student as needed.
-Attendance
-1. Students are best served by attending all classes.
-2. Missing three classes will result in a class failure. This is strictly enforced.
-3. Six or more unexcused late arrivals or early departures will result in class failure.
-Tip: If you are going to be absent, late to class, or need to depart early, please contact me BEFORE class starts. This is so I can make sure you have what you need to succeed!
-Wait Lists
+## Materials
+Some machines are available in the classroom for deep learning projects, but students should bring their personal devices to complete their assignments. Peripheral devices (webcams, Kinects, etc.) are available to check out from the ATS tech room.
+
+## Attendance
+* Students are best served by attending all classes.
+* Missing three classes will result in a class failure. This is strictly enforced.
+* Six or more unexcused late arrivals or early departures will result in class failure. Class will begin promptly at 9am.
+Tip: If you are going to be absent, late to class, or need to depart early, please contact me BEFORE class starts.
+
+## Wait Lists
 Students wait-listed for classes will be admitted on a space available basis determined by instructors’ discretion (in consultation with the department chair).
-Grading Procedure/Criteria
-Grades are credit / no-credit for this course. Credit is based on several factors: 30% participation (discussions, critiques, etc), 70% projects / assignments.
-Incomplete grades will not be offered.
-Writing Assistance
-Writing Center
-Special Needs
-Disability and Learning Resource Center
-Study Sessions
-Students are encouraged to form a study group to meet and work on the homework. The TA will be available during TA office hours (TBA).
-Creative Code Club Join the Creative Code Club!
-Class Exhibition
-The course will culminate in a class exhibition with an opening during the second-to-last week of class.
-Course Schedule
+
+## Grading Procedure/Criteria
+Grades are credit / no-credit for this course. Credit is based on several factors:
+* 30% participation (discussions, critiques, etc)
+* 70% projects / assignments. All assignments must be completed in order to receive credit for this class<br>
+* Incomplete grades will not be offered.
+
+## Writing Assistance
+<a href="https://www.saic.edu/academics/writing-center" target="blank">Writing Center</a>
+
+## Disability and Learning Resource Center
+
+<a href="https://www.saic.edu/life-at-saic/wellness-center/disability" target="blank">Disability and Learning Resource Center</a>
+
+
+## Study Sessions/Tutor hours
+
+Based on class availability, I plan to be available once a week for a couple hours to help reinforce in-class concepts. I will not be providing homework answers in these sessions. Please attempt the homework before attending these sessions. Students are encouraged to work together on homework assignments.
+
+## Course Schedule
 (subject to change based on incoming skills and experience)
-Session 00
-Computer Vision 0
-Introduction to Computer Vision / Machine Learning “What is computer vision?”
-“What is machine learning?”
-Introduction to Artists Using Computer Vision / Machine Learning Image Capture
-Signal to Noise Ratio
-Image Representation in Computers Image Analysis
-Basic Pixel Operations
-Brightest Pixel Tracking Foreground vs. Background
-Image filtering
-Morphological Operators Color manipulation
-Motion
-                      
- Presence
-Brightness Threshold Tracking
-Session 01
-Computer Vision 1 Applied Maths
-Applied Linear Algebra Vectors
-Scalars
-Basis Vectors
-Linear / Affine Transformations Homogenous Coordinates
-Graphics Polygons
-Drawing with Linear Algebra Projection Mapping, Homography Labeling
-Connected components.
-Session 02
-Computer Vision 2 Sensing with RGB+D
-Depth from 2D
-Stereo Correspondence Kinect et al.
-LIDAR
-etc.
-Depth Analysis
-3D Segmentation
-Skeleton Tracking
-Photogrammetry Graphics
-Meshes, 3D forms.
-Session 03
-Machine Learning 0 “Features”
-Introduction to Machine Learning Learning modalities
-Supervised vs. Unsupervised Data
-Generative vs. Discriminative Models “Deep” Learning
-Convolutional Neural Networks
-Dimension Reduction and Visualization (e.g. PCA, TSNE)
-Session 04
-Machine Learning 1
-Object Recognition with existing Networks (e.g. Face detection). Object Differentiation (e.g. Face recognition).
-Session 05
-Machine Learning 2 Image Search
-Reverse Image Search
-Session 06
-Machine Learning 3 Training
-                                               Transfer Learning
- 
- Session 07
-Final Project Proposal Due Machine Learning 2
-Image Generation e.g. Pix2Pix, (example) Session 08
-Machine Learning 3
-Adversarial Networks GANs
-Session 09 Open Studio
-Session 10 Open Studio
-Session 11 Open Studio
-Session 12
-Open Studio Exhibition Installation
-Session 13 Final Critiques
-Prerequisites
-Knowledge of basic coding tools is required for this course. This includes the following:
-Familiarity with the Command Line
-Navigate the file system using cd Change directory using
-cd ../../../my_folder relative paths names
-cd /Users/me/Desktop absolute path names .. Specify the parent directory
-. Specify the current directory
-pwd Output the current working directory
-Modify the file system using
-mkdir new_directory Make a new directory
-rmdir old_directory Remove an old directory
-rm -rf old_directory Recursively and forcefully remove an old directory (be careful!) mv old_name.txt new_name.txt Rename files
-mv old_name.txt ../../ Move files
-Connect to remote machines using ssh Creating and managing SSH keys. Logging on to a remote machine via SSH.
-Resources:
-Learn the Linux Command Line: The Basics Learn the Command Line
-Learn Enough
-Familiarity with Git / Github
-Track work using git from the command line, or a GUI.
-git add your_file.txt Stage a file to commit
-git commit -m "Your commit message." Commit all changes with a message.
-git push Push all changes to the default remote branch on github.com
-git pull Retrieve all changes from a default remote branch on github.com
-git mv ..., git rm ... to move and remove files and make sure git knows about it
-Modify existing work on github by Forking.
-                                      
- Forking and
-Copy a repository from github (e.g. your fork) to your working machine using git clone.
-git clone https://github.com/openframeworks/openFrameworks.git to clone a repository to your working machine Resolve merge conflicts when collaborating with others.
-Know how to resolve merge conflicts by fixing them, adding, pushing, etc. Control what is automatically published using .gitignore files.
-Understand basic .gitignore syntax
-Create a new repository and publish your work online.
-Resources:
-Github for Poets
-Up and Running with Git and GitHub Git Essential Training
-Markdown
-Write documents using markdown syntax.
-Resources:
-Mastering Markdown
-Up and Running with Markdown Markdown Cheatsheet
-Familiarity with Basic Code Concepts
-What is code?
-What is an application?
-What is a variable?
-What are arrays?
-What are control flow statements? What is an if / else statement? What is a for loop?
-What are the parts of a function?
-What are return values?
-What are function parameters? What do functions do?
-What does a main function do? What is a class?
-What are the parts of a class?
-What is a member variable?
-What is a member function or method? What is an instance of a class?
-What is recursion?
-Resources:
-Up and Running with C++
-Data Representation
-How is binary data saved on a computer?
-How are decimal (base 10) numbers represented in binary? How is text represented with numbers?
-How are images represented as numbers?
-What is a “compressed” file?
-What is the difference between lossless and lossy compression? How do you pronounce gif?
-Resources:
-Counting in Binary
-Familiarity with openFrameworks and C++
-Compiling
-How do you generate a project files with the Project Generator? How do you compile a program with an IDE like Xcode?
-                                                
-Program Structure
-What are the parts of a typical openFrameworks application?
-What is the setup() function and how is it used?
-What is the update() function and how is it used?
-What is the draw() function and how is it used?
-What is the keyPressed(int key) function and how is it used?
-What is an addon and how do you add them to your project? Resources:
-ofBook: Animation
-Objects
-What is an ofPixels object for?
-What is an ofTexture object for?
-What is an ofImage object for?
-How do you load am image from a file?
-How do you play a movie with ofVideoPlayer?
-How do you grab live video using ofVideoGrabber?
-How do you modify the pixels from an ofVideoPlayer or ofVideoGrabber? How do you display an image?
-Resources:
-openFrameworks Learning
-C/C++
-What is a pointer and why might it be used?
-What is a reference and why might it be used?
-What are smart pointers and why might they be used?
-What is a std::unique_ptr<>?
-What is a std::shared_ptr<>? Resources:
-C++ Basics
-C++ Essential Training
-Intro to Computer Vision The course page for ARTTECH-3039, Intro to Computer Vision.
+
+#### Session 01 (01.28.2020) - Introduction
+* Introduction to Computer Vision / Machine Learning
+* “What is computer vision?”
+* “What is machine learning?”
+* Introduction to Artists Using Computer Vision / Machine Learning
+* Setting up our tools
+* Creative Coding crash course: HTML/CSS/P5.js
+* Pixel and webcam basics
+
+#### Session 02 (02.04.2020) - Computer Vision/Creative Code Basics
+* Brightness Threshold Tracking
+* Color Detection
+* Brightest point
+* Frame difference
+
+#### Session 03 (02.11.2020) - Computer Vision/Creative Code Basics II
+* RGB+D
+* Optical Flow
+
+#### Session 04 (02.18.2020) - Graphics/3D basics/physics
+* Particle physics
+* Box 2D
+* Intro to three.js
+
+#### Session 05 (02.25.2020) - Intro to machine learning
+* RunwayML
+* Teachable Machine
+* Create a neural network from scratch
+
+#### Session 06 (03.03.2020) - Dimension Reduction and Visualization
+* PCA (principle component analysis)
+* tSNE
+* data sourcing techniques
+* intro to web scraping and scripting
+
+#### Session 07 (03.10.2020) - Recognition
+* Face Recognition
+* Object recognition
+* Pose/gesture recognition
+
+#### Session 08 (03.17.2020) - Image synthesis I
+* Style Transfer
+* GANs (BiGAN, StyleGAN)
+
+#### Session 09 (03.24.2020) - Image synthesis II
+* pix2pix
+* Final project proposal assigned
+
+#### Session 10 (03.31.2020) - NO CLASS - CRITIQUE WEEK
+* Final project proposal due online
+
+#### Session 11 (04.07.2020) - Open studio
+* Misc workshops
+* Work on final projects
+
+#### Session 12 (04.14.2020) - Open studio
+* Misc workshops
+* Work on final projects
+
+#### Session 13 (04.21.2020) - Open studio
+* Misc workshops
+* Work on final projects
+
+#### Session 14 (04.28.2020) - Critique day
+* Final Critiques
+
+#### Session 15 (05.05.2020) - Documentation day
+* Exhibition install?
+
+
+
+## Prerequisites
+Knowledge of basic coding tools is strongly encouraged, but not required for this course. This includes the following:
+
+### Familiarity with the Command Line
+* Navigate the file system using
+    * `cd` Change directory
+        * using `cd ../../../my_folder` relative paths names
+        * `cd /Users/me/Desktop` absolute path names
+    * `..` Specify the parent directory
+    * `.` Specify the current directory
+    * `pwd` Output the current working directory
+* Modify the file system using
+    * `mkdir new_directory` Make a new directory
+    * `rmdir old_directory` Remove an old directory
+    * `rm -rf old_directory` Recursively and forcefully remove an old directory (be careful!)
+    * `mv old_name.txt new_name.txt` Rename files
+    * `mv old_name.txt ../../` Move files
+* Resources:
+    * <a href="https://www.learnenough.com/command-line-tutorial/basicsLearn" target="blank">Learn Enough Command Line</a>
+
+### Familiarity with Git / Github
+* Resources:
+    * <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV" target="blank">GitHub for Poets</a>
+    * <a href="https://www.lynda.com/Git-tutorials/Up-Running-Git-GitHub/409275-2.html" target="blank">Up and Running with Git and GitHub Git Essential Training</a>
