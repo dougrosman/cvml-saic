@@ -17,6 +17,15 @@
     header {
 
     }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: darkslategrey;
+    }
     
     h1 {
         font-size: 1.8em;
@@ -35,6 +44,30 @@
     h1, h2 {
         /* text-align: center; */
     }
+
+    #wrapper {
+        display: flex;
+    }
+
+    #left-container{
+        
+        width: fit-content;
+        height: 98vh;
+        margin: 0 10px;
+        /* border: 2px solid lightblue; */
+        
+    }
+
+    #right-container{
+        
+        width: 70vw;
+        height: 98vh;
+        margin: 20px 80px;
+        /* border: 2px solid pink; */
+    }
+
+
+
     
     #hamburger {
         /* width: max-content; */
@@ -57,7 +90,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 20px;
+        height: 30px;
         list-style: none;
         margin: -4px 0;
 
@@ -66,7 +99,7 @@
     
     .yolo-style {
         background-color: none;
-        font-size: 10px;
+        font-size: 14px;
         color: hsla(0, 0%, 0%, 0);
         border: 3px solid hsla(10, 0%, 0%, 0);
         position: relative;

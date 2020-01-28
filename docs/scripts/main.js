@@ -32,10 +32,12 @@ for(let i = 0; i < yolo.length; i++) {
     e.onmouseenter = function(){
         let randomHue = hueValues[Math.floor(Math.random()*hueValues.length)];
         
-        e.style.border = `3px solid hsla(${randomHue}, 100%, 60%, 1)`;
-        currentLabel.style.backgroundColor = `hsla(${randomHue}, 100%, 60%, 1)`;
+        e.style.border = `3px solid hsla(${randomHue}, 100%, 70%, 1)`;
+        currentLabel.style.backgroundColor = `hsla(${randomHue}, 100%, 70%, 1)`;
         
         currentLabel.style.color = "black";
+        randomIndex = Math.floor(Math.random()*(splitLabels.length));
+        currentLabel.innerHTML = splitLabels[randomIndex];
         
         
     }

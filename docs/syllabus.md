@@ -52,7 +52,7 @@ Students will explore and critique contemporary applications ranging from automa
 
 Students will engage in individual in-lab and home assignments, class presentations, lectures, discussions, assigned readings, group and individual projects and desk critiques. Visiting artists / faculty may enhance the experience and offer additional perspectives.
 
-### Class Structure (Typical)
+## Class Structure (Typical)
 9:00 - 9:30 : Look at new artists, catch up on the week’s CV/ML headlines.<br>
 9:30 - 10:15 : Lecture Part 1.<br>
 10:15 - 10:30 : Break<br>
@@ -63,14 +63,14 @@ Students will engage in individual in-lab and home assignments, class presentati
 02:45 - 04:00 : Open Studio (Homework, Projects, Discussion, etc).<br>
 
 
-### Assignments
+## Assignments
 The first 10 weeks of the course will be built on well-constrained code-based assignments. These assignments have clear goals and are intended to build confidence and code competency:
 * Weeks 1-4 weeks emphasize code and "classic" computer vision techniques.
 * Weeks 5-10 emphasize machine learning approaches and data acquisition/curation.
 * Weeks 11-15 week of the course are focused on integrating these techniques, technologies and critical discussions with your existing creative / research practice. 
 
 
-### Creative Coding Tools
+## Creative Coding Tools
 We will be doing most of our work with __P5.js__ on the web, with potential for some Processing and C++/openFrameworks. While many modern computer vision and machine learning tools are built with C++ at their core, many powerful creative tools have become available that allow web-based applications to utilize computer vision and machine learning techniques.
 
 * <a href="https://p5js.org/" target="blank">P5.js</a>
@@ -84,12 +84,13 @@ We will be doing most of our work with __P5.js__ on the web, with potential for 
 Open source tools available online use a variety of coding languages and frameworks. Students are encouraged to find tools outside of what is introduced in class when composing final projects.
 
 
-### Class Text(s)
+## Class Text(s)
 There is no single class text, though there are online books, guides and articles we'll reference throughout the semester.
 
 #### Computer Vision
 * <a href="https://openframeworks.cc/ofBook/chapters/image_processing_computer_vision.html" target="blank">ofBook: Image Processing and Computer Vision</a>
-* <a href="http://www-cs.ccny.cuny.edu/~wolberg/capstone/opencv/LearningOpenCV.pdf" target="blank">Learning OpenCV : computer vision with the OpenCV</a> library
+* <a href="http://www-cs.ccny.cuny.edu/~wolberg/capstone/opencv/LearningOpenCV.pdf" target="blank">Learning OpenCV : computer vision with the OpenCV</a>
+
 #### Machine Learning
 * <a href="https://ml4a.github.io/" target="blank">ML4A (Machine Learning for Artists)</a>
 * <a href="http://www.deeplearningbook.org/" target="blank">Deep Learning (Ian Goodfellow, Yoshua Bengio, Aaron Courville)</a>
