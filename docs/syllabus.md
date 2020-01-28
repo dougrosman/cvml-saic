@@ -1,14 +1,21 @@
 # Syllabus
-## Intro to Computer Vision and Machine Learning ARTTECH 3039
+### Intro to Computer Vision and Machine Learning ARTTECH 3039
 #### Semester, Year
 Spring, 2020
 
-Meeting Times
+#### Meeting Times
 Thursday 9am-4pm
-Meeting Location
+
+#### Meeting Location
 MacLean 401
-Instructor
-Christopher Baker
+
+#### Instructor
+Doug Rosman
+
+#### Course website
+<a href="https://dougrosman.github.io/cvml-saic" target="blank">https://dougrosman.github.io/cvml-saic</a>
+
+#### Slack channel
 General Code Discussion (Public)
 https://ats.community/ (Post your questions in the appropriate category). Class Website
 http://saic-ats.github.io/ARTTECH-3039/
@@ -19,7 +26,7 @@ https://github.com/SAIC-ARTTECH-3039-5039
 Course openFrameworks Addon
 https://github.com/SAIC-ATS/ofxARTTECH-3039
 TA
-Amay Kataria
+Sal Moreno
 Instructor Bio
 Christopher Baker is an artist whose work engages the rich collection of social, technological and ideological networks present in the urban landscape. He creates artifacts and situations that reveal and generate relationships within and between these networks. Christopher’s work has been presented worldwide and he contributes to the open source community at http://github.com/bakercp.
 TA Bio
