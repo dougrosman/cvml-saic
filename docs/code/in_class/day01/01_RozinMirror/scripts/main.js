@@ -1,5 +1,3 @@
-// you can leave notes for yourself in comments!
-
 let myCapture;
 let r = 0.0;
 
