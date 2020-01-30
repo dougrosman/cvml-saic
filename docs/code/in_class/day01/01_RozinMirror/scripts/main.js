@@ -58,5 +58,5 @@ function draw() {
     }
   }
   // increase the rotation amount for all the squares
-  r+=.015;
+  r+=.5;
 }
