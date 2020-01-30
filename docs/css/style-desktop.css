@@ -13,36 +13,41 @@
     body {
         font-family: 'Roboto', sans-serif;    
     }
-    
-    header {
 
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-    
     h1 {
         font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    
     }
 
     h6 {
         font-size: 12px;
         color: rgba(0, 0, 0, 0);
     }
-    
-    h2 {
-        font-size: 1.4em;
-    
+
+    a {
+        text-decoration: none;
+        color: orange;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
     
-    h1, h2 {
-        /* text-align: center; */
+    p {
+        width: 100%;
+        padding: 3px 0;
+    }
+
+    pre {
+        font-size: 14px;
+    }
+
+    .black {
+        color: black;
     }
 
     #wrapper {
@@ -60,12 +65,10 @@
 
     #right-container{
         
-        width: 70vw;
-        height: 98vh;
+        width: 55vw;
+        height: 90vh;
         margin: 30px 80px;
-        /* border: 2px solid pink; */
     }
-
 
 
     
@@ -82,9 +85,6 @@
     
     }
     
-    #dropdown-menu {
-    
-    }
     
     .dropdown-item {
         display: flex;
