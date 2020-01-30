@@ -11,13 +11,13 @@
 
 
 
-![formula](images/YxWidth+X.jpg)
+![formula](images/formula.jpg)<br>
 _convert 2-dimensional data to single-dimension data: z = y * width + x_
 
 <br>
 <br>
 
-![weirdie](images/weirdie.PNG)
+![weirdie](images/weirdie.jpg)<br>
 _I found my imagenet-roulette capture_
 
 
