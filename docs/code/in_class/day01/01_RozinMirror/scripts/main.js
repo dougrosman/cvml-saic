@@ -16,7 +16,6 @@ function setup() {
 
 function draw() {
   background(255);
-  // fill(random(255), random(255), random(255));
   
   // load pixel data into myCapture object
   myCapture.loadPixels();
@@ -41,18 +40,23 @@ function draw() {
       // and its darkness value
       const radius = stepSize * darkness;
       
-      
       push();
+        // the translate and scale functions below flip the video
+        // so the video is properly mirrored
         translate(width, 0);
         scale(-1, 1);
+        // fill the squares with a color based on square size
         fill(map(radius, 0, stepSize, 0, 255), 255, 255, 127);
         push();
+        
+          // make the squares rotate about themselves
           translate(x, y);
           rotate(r);
           rect(0, 0, radius, radius);
         pop();
       pop();
-      r+=.005;
     }
   }
+  // increase the rotation amount for all the squares
+  r+=.015;
 }
