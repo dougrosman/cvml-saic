@@ -1,7 +1,6 @@
 ## Agenda
 1. Look at some art/technology
 2. Discuss Paglen reading
-3. Computer Vision history
 
 
 * sensing a body in the room
