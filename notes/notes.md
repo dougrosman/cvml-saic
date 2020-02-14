@@ -3,3 +3,10 @@
 
 
 Computer vision out in the world...if you encounter a "computer vision" moment in your day-to-day, take a picture of it!
+
+
+Vida p5.js motion tracking library
+https://www.tetoki.eu/vida/index.html#reference
+https://www.tetoki.eu/vida/index.html#examples
+
+https://inspirit.github.io/jsfeat/
