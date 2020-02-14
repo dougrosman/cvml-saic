@@ -37,10 +37,12 @@ a:hover {
 }
 
 figcaption {
-    margin: 0 auto;
+    margin: 10px auto;
     width: max-content;
     color: white;
 }
+
+
 
 #content {
     width: 100%;
@@ -70,4 +72,42 @@ figcaption {
     object-fit: cover;
     width: 100%;
     height: 300px;
+    transition-duration: .25s;
+}
+
+.entry > a > img:hover{
+    transform: scale(1.02);
+}
+
+.center {
+    position: absolute;
+    width: 50%;
+    min-width: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white {
+    color: white;
+}
+
+.white > a {
+    color: lightcoral;
+}
+
+.white > a:hover {
+    color: yellow;
+}
+
+.large {
+    font-size: 1.35em;
+}
+
+.back-to-home {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: .7em;
+    background-color: black;
 }
