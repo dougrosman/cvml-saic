@@ -89,6 +89,10 @@
         padding: 10px;
     }
 
+    .mini-sketch {
+        display: inline-block;
+        text-align: center;
+    }
 
     
     #hamburger {
