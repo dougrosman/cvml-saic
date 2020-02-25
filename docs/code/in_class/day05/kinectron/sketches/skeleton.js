@@ -1,5 +1,5 @@
-let title = document.getElementById("page-title");
-title.innerHTML = "Kinectron: Skeleton"
+// let title = document.getElementById("page-title");
+// title.innerHTML = "Kinectron: Skeleton"
 
 let w = 1280;
 let h = 720;
