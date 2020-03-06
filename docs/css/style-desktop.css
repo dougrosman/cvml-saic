@@ -1,8 +1,3 @@
-/* @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)  { */
-
     * {
         padding: 0;
         margin: 0;
@@ -21,12 +16,13 @@
     h1 {
         font-size: 1.8em;
         width: max-content;
-        max-width: 100%;
+        max-width: 98%;
     }
  
 
     h2 {
         font-size: 1.5em;
+        max-width: 99%;
     
     }
 
@@ -63,7 +59,7 @@
     }
     
     p {
-        width: 100%;
+        width: 98%;
         margin: 3px 0;
     }
 
@@ -85,7 +81,8 @@
     #wrapper {
         display: flex;
         flex-direction: row;
-        width: 97vw;
+        width: 96vw;
+        margin: 0 1vw;
     }
 
     #left-container{
@@ -99,10 +96,9 @@
 
     #right-container{
         
-        width: 90%;
-        max-width: 1200px;
+        width: 80%;
+        /* max-width: 1200px; */
         height: 90vh;
-        margin: 0px;
     }
 
     .flex {
@@ -112,13 +108,28 @@
     }
 
     .page-content {
-        width: 94%;
+        width: 60vw;
         height: 90vh;
         overflow-y: scroll;
         padding: .25vw 2vw .25vw .5vw;
     }
 
+    @media only screen 
+  and (min-width: 650px)  {
+    .page-content {
+        width: 68vw;
+    }
+
+  }
+
+    .border {
+        font-size: 12px;
+        width: max-content;
+    }
+
     .mini-sketch {
+        width: max-content;
+        max-width: 250px;
         display: inline-block;
         text-align: center;
     }
