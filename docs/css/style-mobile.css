@@ -59,7 +59,7 @@
     li {
         margin: 0;
         margin-left: 20px;
-        width: 98%
+        width: 96%
     }
 
     a {
@@ -117,7 +117,7 @@
         
         width: 94%;
         max-width: unset;
-        margin: 0 auto;
+        margin: 200px auto;
         margin-bottom: 25px;
     }
 
@@ -154,10 +154,6 @@
         max-width: 200px
         
     }
-
-    
-    
-    
     
     .dropdown-item {
         width: 98%;
