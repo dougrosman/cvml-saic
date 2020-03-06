@@ -40,9 +40,13 @@
         width: 95%;
     }
 
+    ol {
+        width: 95%;
+    }
+
     li {
         margin-left: 20px;
-        width: 90%
+        width: 95%
     }
 
     a {
