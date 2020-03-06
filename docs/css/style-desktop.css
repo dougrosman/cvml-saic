@@ -14,8 +14,14 @@
         font-family: 'Roboto', sans-serif;    
     }
 
+    header {
+        width: 100%;
+    }
+
     h1 {
-        font-size: 2.2em;
+        font-size: 1.8em;
+        width: max-content;
+        max-width: 100%;
     }
  
 
@@ -24,9 +30,23 @@
     
     }
 
+    h3 {
+        width: max-content;
+        max-width: 98%;
+    }
+
     h6 {
         font-size: 12px;
         color: rgba(0, 0, 0, 0);
+    }
+
+    ul {
+        width: 95%;
+    }
+
+    li {
+        margin-left: 20px;
+        width: 90%
     }
 
     a {
@@ -44,12 +64,18 @@
     
     p {
         width: 100%;
-        padding: 3px 0;
+        margin: 3px 0;
     }
 
-    pre {
-        font-size: 14px;
-        white-space: pre-wrap;
+    p.caption {
+        display: inline-block;
+        width: 100px;
+    }
+
+    .code {
+        display: block;
+        font-family: monospace;
+        word-break: break-all;
     }
 
     .black {
@@ -58,22 +84,25 @@
 
     #wrapper {
         display: flex;
+        flex-direction: row;
+        width: 97vw;
     }
 
     #left-container{
         
-        width: fit-content;
+        width: 15%;
+        min-width: 150px;
         height: 98vh;
-        margin: 0 10px;
-        /* border: 2px solid lightblue; */
-        
+        margin: 0 .5vw;
+        /* border: 2px solid lightblue; */ 
     }
 
     #right-container{
         
-        width: 55vw;
+        width: 90%;
+        max-width: 1200px;
         height: 90vh;
-        margin: 0px 80px;
+        margin: 0px;
     }
 
     .flex {
@@ -83,10 +112,10 @@
     }
 
     .page-content {
-        width: 100%;
-        height: 76vh;
+        width: 94%;
+        height: 90vh;
         overflow-y: scroll;
-        padding: 10px;
+        padding: .25vw 2vw .25vw .5vw;
     }
 
     .mini-sketch {
@@ -109,7 +138,6 @@
         width: 10px;
         margin: 2px auto;
         border-radius: 2px;
-    
     }
     
     
@@ -118,6 +146,7 @@
         align-items: center;
         justify-content: center;
         height: 30px;
+        width: max-content;
         list-style: none;
         margin: -4px 0;
 
@@ -134,10 +163,17 @@
 
     h5.work {
         margin: 5px 0 5px 20px;
-        font-size: .9em;
+        font-size: calc(.9em + .5vw);
+        width: unset;
     }
 
     h6.work {
         margin: 5px 0 5px 20px;
-        font-size: .8em;
+        font-size: calc(.6em + .75vw);
+        width: unset;
+    }
+
+    .artist {
+        text-decoration: underline;
+        font-size: calc(.8em + .5vw);
     }
