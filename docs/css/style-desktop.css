@@ -192,3 +192,7 @@
         text-decoration: underline;
         font-size: calc(.8em + .5vw);
     }
+
+    .backToTop {
+        display: none;
+    }

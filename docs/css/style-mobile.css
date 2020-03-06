@@ -217,5 +217,19 @@
         border-radius: 2px;
     }
 
+    .backToTop {
+        display: block;
+        width: max-content;
+        height: max-content;
+        background-color: rgba(0, 0, 0, .25);
+        border-radius: 5px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        color: rgba(255, 255, 255, .75);
+        font-size: 1.5em;
+        padding: 0 8px;
+    }
+
 
 }
