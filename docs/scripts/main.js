@@ -48,3 +48,16 @@ for(let i = 0; i < yolo.length; i++) {
         e.style.border = `3px solid hsla(0, 100%, 60%, 0)`;
     }
 }
+
+let backToTop = document.createElement("div");
+
+backToTop.innerHTML = "⇧";
+backToTop.classList.add("backToTop");
+document.body.appendChild(backToTop);
+
+let btt = document.querySelector('.backToTop');
+
+btt.addEventListener('click', function(){
+    window.scrollTo(0, 0);
+
+});
