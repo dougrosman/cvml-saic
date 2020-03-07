@@ -196,3 +196,19 @@
     .backToTop {
         display: none;
     }
+
+    .page-title{
+        font-size: 3em;
+        width: 90%;
+        font-weight: 100;
+        font-style: italic;
+        color: white;
+        background-color: black;
+        padding-left: 20px;
+    }
+
+    #home-page {
+        font-size: 9vw;
+        font-style: italic;
+        line-height: 12vw;
+    }
