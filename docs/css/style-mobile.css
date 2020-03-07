@@ -233,13 +233,17 @@
     }
 
     .page-title{
-        font-size: 2.5em;
+        font-size: 2em;
         width: 98%;
+        max-width:unset;
         font-weight: 100;
         font-style: italic;
         color: white;
         background-color: black;
-        padding: 6px 0;
+        padding: 4px 5.03%;
+        position: sticky;
+        top: 0px;
+        transform: translate(-4%, 0);
     }
 
     #home-page {
