@@ -3,19 +3,30 @@ let h = 720;
 let particles = [];
 
 let kinectron;
+let img;
+
+
+
+// this is a standalone function. put it anywhere in your sketch.
+// windowResized() is a built-in javascript function
+
+function preload() {
+  img=loadImage("../images/snow.png")
+
+}
 
 
 function setup() {
-    createCanvas(w, h);
+  canvas = createCanvas(windowWidth,windowHeight);
     background(0);
 
-    kinectron = new Kinectron("10.73.23.30");
+    kinectron = new Kinectron("192.168.0.24");
 
     kinectron.makeConnection();
     kinectron.startTrackedBodies(drawBody);
     console.log(kinectron);
 
-    const NUM_PARTICLES = 1000;
+    const NUM_PARTICLES = 900;
   
   for(let i = 0; i < NUM_PARTICLES; i++) {
     let p = new Particle();
@@ -51,7 +62,7 @@ function drawBody(body) {
 
     
     let mPos = p5.Vector.lerp(lh, rh, 0.5);
-    forceScaler = -30;
+    forceScaler = -40;
 
     //console.log(mPos);
 
@@ -62,7 +73,7 @@ function drawBody(body) {
     
         let p = particles[i]
         let d = dist(mPos.x, mPos.y, p.pos.x, p.pos.y);
-        let magnitude = forceScaler / (d+15);
+        let magnitude = forceScaler / (d+5);
         let forceDirection = p.pos.sub(mPos);
         forceDirection.normalize();
         let newForce = forceDirection.mult(magnitude);
@@ -73,6 +84,18 @@ function drawBody(body) {
   }
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  background(0);
+}
+
+// this is a standalone function. put it anywhere in your sketch.
+// windowResized() is a built-in p5 function
+function mousePressed() {
+  let fs = fullscreen();
+  fullscreen(!fs);
+}
+
 
 class Particle {
   
@@ -81,9 +104,9 @@ class Particle {
       this.vel = createVector(random(-10, 10), random(-10, 10));
       this.accel = createVector(random(-0.1, 0.1), random(-0.1, 0.1));
       this.color = [random(255), 255, 255];
-      this.radius = random(2, 8);
+      this.radius = random(4, 16);
       this.force = createVector(0, 0);
-      this.drag = 0.97;
+      this.drag = 0.990;
     }
     
     update() {
@@ -93,7 +116,8 @@ class Particle {
     }
     
     draw() {
-      ellipse(this.pos.x, this.pos.y, this.radius, this.radius);
+      image(img, this.pos.x, this.pos.y, this.radius, this.radius);
+      //ellipse(this.pos.x, this.pos.y, this.radius, this.radius);
     }
   }
   
