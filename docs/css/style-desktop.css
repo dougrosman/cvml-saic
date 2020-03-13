@@ -178,7 +178,7 @@
 
     h5.work {
         margin: 5px 0 5px 20px;
-        font-size: calc(.9em + .5vw);
+        font-size: calc(.9em + .2vw);
         width: unset;
     }
 
