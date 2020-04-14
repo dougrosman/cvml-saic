@@ -37,9 +37,7 @@ for(let i = 0; i < yolo.length; i++) {
         
         currentLabel.style.color = "black";
         randomIndex = Math.floor(Math.random()*(splitLabels.length));
-        currentLabel.innerHTML = splitLabels[randomIndex];
-        
-        
+        currentLabel.innerHTML = splitLabels[randomIndex]; 
     }
 
     e.onmouseleave = function() {
