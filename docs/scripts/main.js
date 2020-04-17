@@ -59,3 +59,10 @@ btt.addEventListener('click', function(){
     window.scrollTo(0, 0);
 
 });
+
+
+window.onload = function(){
+
+    console.log("asdfasdfasdfasdf")
+    document.querySelector("#right-container").querySelector(".page-content").scrollTo(0, 10000);
+};
