@@ -1,56 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="~/favicon/favicon.ico">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style-desktop.css">
-    <link rel="stylesheet" href="css/style-mobile.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap" rel="stylesheet">
-    <title>CV+ML-Spring 2020</title>
+    <link rel="stylesheet" href="final.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script src="libs/p5.min.js"></script>
+
+    <title>CVML Spring 2020</title>
 </head>
 <body>
-    <div id="wrapper">
-        <div id="left-container">
-            <header>
-                <h1 class="yolo"><a class="black" href=".">Intro to Computer Vision and Machine Learning</a></h1>
-                <h2 class="yolo" >Spring 2020</h2>
-            </header>
-            <ul id="dropdown-menu" class="yolo">
-                <li class="dropdown-item yolo"><a class="black" href=".">Home</a></li>
-                <li class="dropdown-item yolo"><a class="black" href="syllabus">Syllabus</a></li>
-                <li class="dropdown-item yolo"><a class="black" href="schedule">Schedule</a></li>
-                <li class="dropdown-item yolo"><a class="black" href="assignments/">Assignments</a></li>
-                <li class="dropdown-item yolo"><a class="black" href="code">Code</a></li>
-                <li class="dropdown-item yolo"><a class="black" href="resources">Resources</a></li>
-                <li class="dropdown-item yolo"><a class="black" href="artists">Artists+Artworks</a></li>
-                <li class="dropdown-item yolo"><a class="black" href="http://cvmlsp20.slack.com/" target="_blank">Slack</a></li>
-                <li class="dropdown-item yolo"><a class="black" href="https://saic.instructure.com/courses/2645666" target="_blank">Canvas</a></li>
-                <li class="dropdown-item yolo"><a class="black" href="sample-portfolio/">Sample Portfolio</a></li>
-                
-            </ul>
-        </div>
-        <div id="right-container">
-
-            <!-- <img src="assets/gifs/hotdog-nothotdog.gif"> -->
-
-            <h1 id="home-page">INTRO TO COMPUTER VISION AND MACHINE LEARNING</h1>
-            
-        </div>
-    </div>
-
-
-
-
-    <script src="scripts/yolo_labels.js"></script>
-    <script src="scripts/main.js"></script>
     
+
+        <header class="header">
+            <h1 class="site-title">Intro to Computer Vision and Machine Learning: Spring 2020</h1>
+            <h2 class="site-subtitle">SAIC Art and Technology Studies</h2>
+            <div class="instructor">
+                <h3>Instructor: Doug Rosman</h3>
+                <h3>TA: Sal Moreno</h3>
+            </div>
+
+            <div class="hamburger">
+                <div class="patty"></div>
+                <div class="patty"></div>
+                <div class="patty"></div>
+            </div>
+            
+            <nav class="main-menu">
+                <a class="about" href="about">About</a>
+                <a class="main-link" href="avery">Avery Johnson</a>
+                <a class="main-link" href="blake">Blake Fall-Conroy</a>
+                <a class="main-link" href="ella">Ella Roche</a>
+                <a class="main-link" href="ezgi">Ezgi Ateş</a>
+                <a class="main-link" href="jakyung">Jakyung Lee</a>
+                <a class="main-link" href="kalan">Kalan Strauss</a>
+                <a class="main-link" href="melissa">Melissa Harris</a>
+                <a class="main-link" href="patrick">Patrick O'Shea</a>
+                <a class="main-link" href="shannon">Shannon Choi</a>
+                <a class="main-link" href="uma">Uma Oswald</a>
+                <a class="main-link" href="yshao">Yshao Lin</a>
+                <a class="main-link" href="zhixuan">Zhixuan Zhang</a>
+                <a class="main-link" href="ziyu">Ziyu Zhang</a>
+            </nav>
+        </header>
+        
+        <main class="main-content">
+            <div class="gallery">
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="Avery Johnson" class="main-image">
+                    <div class="overlay">Avery Johnson</div>
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="Blake Fall-Conroy" class="main-image">
+                    <div class="overlay">Blake Fall-Conroy</div>
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="ella" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="ezgi" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="jakyung" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="kalan" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="melissa" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="patrick" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="shannon" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="uma" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="yshao" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="zhixuan" class="main-image">
+                </div>
+                <div class="image-card">
+                    <img src="finals/assets/originals/melissa-test-input-3.png" alt="ziyu" class="main-image">
+                </div>
+            </div>
+        </main>
+    
+    <script src="final.js"></script>
 </body>
 </html>
