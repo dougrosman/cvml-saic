@@ -20,7 +20,7 @@ header {
     
 }
 
-header > *{
+header > * {
     margin: .75rem;
 }
 
@@ -32,6 +32,7 @@ header > *{
     line-height: 1.35rem;
     font-weight: 200;
 }
+
 
 .site-subtitle {
     font-weight: 200;
@@ -46,7 +47,7 @@ header > *{
 }
 
 .main-menu {
-    width: 40%;
+    width: 35%;
     min-width: 130px;
     margin: 0 auto;
     display: flex;
@@ -62,6 +63,22 @@ header > *{
     font-size: calc(.6rem + .1vw);
     padding: 2px;
     margin: 2px 30% 15px 30%;
+}
+
+.home {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 8px;
+}
+
+.home:hover {
+    color: salmon;
 }
 
 .main-link {
@@ -143,7 +160,10 @@ header > *{
 .image-card:hover .overlay {
     background-color: #111b;
     color: salmon;
-    
+}
+
+#sketch {
+    margin: 30px 0;
 }
 
 @media only screen 
