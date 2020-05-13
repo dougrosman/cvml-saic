@@ -47,6 +47,7 @@ header > *{
 
 .main-menu {
     width: 40%;
+    min-width: 130px;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
@@ -101,12 +102,18 @@ header > *{
 }
 
 .gallery {
-    columns: 300px 3;
-    column-gap: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
 }
 
 .image-card {
     position: relative;
+    flex: 1 1 30%;
+    min-width: 250px;
+    max-width: 300px;
 }
 
 .overlay {
@@ -130,7 +137,7 @@ header > *{
 }
 
 .overlay {
-    transition: background-color .4s, color .4s;
+    transition: background-color .25s, color .25s;
 }
 
 .image-card:hover .overlay {
@@ -147,6 +154,12 @@ header > *{
 
     .hamburger {
         display: flex;
+    }
+
+    .image-card {
+        position: relative;
+        flex: auto;
+        min-width: 100%;
     }
 
 

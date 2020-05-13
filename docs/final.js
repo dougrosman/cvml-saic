@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+    let imageCards = $(".image-card").children(".main-image");
+    $(".image-card").append(`<div class="overlay"></div>`);
+    let overlays = $(".overlay");
+    for(let i = 0; i < imageCards.length; i++) {
+        let name = imageCards[i].alt;
+        overlays[i].innerHTML = name;
+        
+    }
+
+    
+
+
     $(".hamburger").click(function(){
         $(".main-menu").toggle();
     })
