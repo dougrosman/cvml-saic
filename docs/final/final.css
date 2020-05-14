@@ -311,7 +311,7 @@ header > * {
     }
 
     #sketch {
-        overflow: hidden;
+        /* overflow: hidden; */
         margin: 30px auto;
     }
 
@@ -363,7 +363,8 @@ header > * {
     }
 
     .ziyu {
-        /* position: relative */
+        position: relative;
+        left: 50%;
         transform: translate(-50%, 0);
     }
 
