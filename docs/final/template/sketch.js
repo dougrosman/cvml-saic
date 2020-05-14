@@ -23,6 +23,7 @@ let y = 0;
 let easing = 0.05;
 
 let locked = false;
+let muted = false;
 
 function preload(){
   brush1 = loadImage("images/ouroboros_brush1.png");
@@ -96,6 +97,8 @@ function draw() {
   }
 }
 
+
+
 function keyPressed() {
   
   if(key == '1') {
@@ -104,9 +107,10 @@ function keyPressed() {
     brush3_draw = false;
     brush4_draw = false;
     brush5_draw = false;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush1_sound.play();
+    
+    if(!muted){
+      brush1_sound.play();
+    }
   
   }
   
@@ -116,9 +120,10 @@ function keyPressed() {
     brush3_draw = false;
     brush4_draw = false;
     brush5_draw = false;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush2_sound.play();
+    
+    if(!muted){
+      brush2_sound.play();
+    }
   }
   
   if(key == '3') {
@@ -127,9 +132,10 @@ function keyPressed() {
     brush3_draw = true;
     brush4_draw = false;
     brush5_draw = false;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush3_sound.play();
+    
+    if(!muted){
+      brush3_sound.play();
+    }
   }
   
   if(key == '4') {
@@ -138,9 +144,10 @@ function keyPressed() {
     brush3_draw = false;
     brush4_draw = true;
     brush5_draw = false;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush4_sound.play();
+    
+    if(!muted){
+      brush4_sound.play();
+    }
   }
   
   if(key == '5') {
@@ -150,9 +157,10 @@ function keyPressed() {
     brush3_draw = false;
     brush4_draw = false;
     brush5_draw = true;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush5_sound.play();
+    
+    if(!muted){
+      brush5_sound.play();
+    }
   }
 
   if(key == 's'){
@@ -173,6 +181,8 @@ function touchMoved() {
 
 $(document).ready(function(){
 
+  
+
   $(".mute").click(function(){
     $(".fa-volume-up").toggle();
     $(".fa-volume-mute").toggle();
@@ -181,6 +191,8 @@ $(document).ready(function(){
     brush3_sound.stop();
     brush4_sound.stop();
     brush5_sound.stop();
+
+    muted = !muted;
   })
 
   $(".screen-lock").click(function(){
@@ -194,73 +206,79 @@ $(document).ready(function(){
   })
 
   $("#b1").click(function(){
-    $(".brush-btn").css("color", "#111");
-    $(this).css("color", "salmon");
+    $(".brush-btn").css("color", "#111").css("background-color", "#fefefe");
+    $(this).css("color", "salmon").css("background-color", "#111");
     
     brush1_draw = true;
     brush2_draw = false;
     brush3_draw = false;
     brush4_draw = false;
     brush5_draw = false;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush1_sound.play();
+
+    if(!muted){
+      brush1_sound.play();
+    }
+    
   })
 
   $("#b2").click(function(){
-    $(".brush-btn").css("color", "#111");
-    $(this).css("color", "salmon");
+    $(".brush-btn").css("color", "#111").css("background-color", "#fefefe");
+    $(this).css("color", "salmon").css("background-color", "#111");
     
     brush1_draw = false;
     brush2_draw = true;
     brush3_draw = false;
     brush4_draw = false;
     brush5_draw = false;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush1_sound.
+    
+    if(!muted){
+      brush2_sound.play();
+    }
   })
 
   $("#b3").click(function(){
-    $(".brush-btn").css("color", "#111");
-    $(this).css("color", "salmon");
+    $(".brush-btn").css("color", "#111").css("background-color", "#fefefe");
+    $(this).css("color", "salmon").css("background-color", "#111");
     
     brush1_draw = false;
     brush2_draw = false;
     brush3_draw = true;
     brush4_draw = false;
     brush5_draw = false;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush1_sound.play();
+    
+    if(!muted){
+      brush3_sound.play();
+    }
   })
 
   $("#b4").click(function(){
-    $(".brush-btn").css("color", "#111");
-    $(this).css("color", "salmon");
+    $(".brush-btn").css("color", "#111").css("background-color", "#fefefe");
+    $(this).css("color", "salmon").css("background-color", "#111");
     
     brush1_draw = false;
     brush2_draw = false;
     brush3_draw = false;
     brush4_draw = true;
     brush5_draw = false;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush1_sound.play();
+    
+    if(!muted){
+      brush4_sound.play();
+    }
   })
 
   $("#b5").click(function(){
-    $(".brush-btn").css("color", "#111");
-    $(this).css("color", "salmon");
+    $(".brush-btn").css("color", "#111").css("background-color", "#fefefe");
+    $(this).css("color", "salmon").css("background-color", "#111");
     
     brush1_draw = false;
     brush2_draw = false;
     brush3_draw = false;
     brush4_draw = false;
     brush5_draw = true;
-    $(".fa-volume-up").show();
-    $(".fa-volume-mute").hide();
-    brush1_sound.play();
+    
+    if(!muted){
+      brush5_sound.play();
+    }
   })
 
   $("#bsave").click(function(){
