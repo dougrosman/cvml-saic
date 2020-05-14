@@ -152,7 +152,7 @@ header > * {
 
 .top-bar{
     display: flex;
-    width: 92vw;
+    width: 96vw;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -163,10 +163,12 @@ header > * {
     text-decoration: none;
     color: #111;
     font-size: 1rem;
+    opacity: .35;
 }
 
 .home:hover {
     color: salmon;
+    opacity: 1;
 }
 
 .help {
@@ -177,19 +179,18 @@ header > * {
 }
 
 .info {
-    background-color: #111;
-    color: #fefefe;
+    color: #111;
     width: 25px;
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    opacity: .25;
+    opacity: .35;
 }
 
 .info:hover {
-    background-color: salmon;
+    color: salmon;
     cursor: pointer;
     opacity: 1;
 }
@@ -234,6 +235,23 @@ header > * {
     padding: 10px;
 }
 
+.screen-lock {
+    display: none;
+}
+
+.fa-lock {
+    display: none;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    width: 96vw;
+    margin: 0 auto 20px auto;
+}
+
+.brush-buttons-toggler {
+    display: none;
+}
 
 
 @media only screen 
@@ -280,6 +298,53 @@ header > * {
         align-items: center;
         color: #fefefe;
     }
+
+    .top-bar {
+        position: fixed;
+        top: 0;
+        width: 92vw;
+        z-index: 10;
+    }
+
+    #sketch {
+        overflow: scroll;
+        margin: 30px 0;
+    }
+
+    .screen-lock {
+        display: block;
+        color: #111;
+        opacity: 0.35;
+    }
+    
+    .fa-lock {
+        display: none;
+    }
+
+    .help {
+        width: max-content;
+    }
+
+    .mute {
+        margin-left: 10px;
+    }
+
+    .site-title{
+        margin-top: 60px;
+    }
+
+    .brush-buttons-toggler {
+        margin: 5px auto 40px auto;
+    }
+
+    .brush-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80vw;
+        margin: 0 auto;
+        
+    }
+
 
 
   }

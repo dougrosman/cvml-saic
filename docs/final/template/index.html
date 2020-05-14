@@ -18,6 +18,10 @@
     <div class="top-bar">
         <a class="home" href="..">&lt;</a>
         <div class="help">
+            <div class="screen-lock">
+                <i class="fas fa-lock-open"></i>
+                <i class="fas fa-lock"></i>
+            </div>
             <div class="mute">
                 <i class="fas fa-volume-mute"></i>
                 <i class="fas fa-volume-up"></i>
@@ -31,13 +35,26 @@
         
         <div class="instructions">
             
-            <p>Move your cursor around the screen to draw.</p>
+            <p>Move your cursor/finger around the screen to draw.</p>
             <p>Press keys 1-5 to cycle between brushes</p>
+            <p>Press 'S' to save your sketch.</p>
         </div>         
     </header>
     
     <main class="main-content">
         <div id="sketch"></div>
+        <div class="brush-buttons-toggler">
+            <div class="brush-buttons">
+                <button id="b1">1</button>
+                <button id="b2">2</button>
+                <button id="b3">3</button>
+                <button id="b4">4</button>
+                <button id="b5">5</button>
+                <button id="bsave">save</button>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore quo nobis nostrum voluptatibus natus, facilis itaque sapiente aliquam eveniet. Quisquam doloribus odio reiciendis perspiciatis eos ipsam vel tempore iste possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error facere quas odit amet delectus assumenda incidunt minima ut illum nostrum ad sed reprehenderit, enim sunt reiciendis placeat ipsum? Maiores, saepe.</p>
     </main>
     
     <script src="sketch.js"></script>

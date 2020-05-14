@@ -41,8 +41,13 @@ $(document).ready(function() {
         }
     });
 
+    // $(".screen-lock").click(function(){
+    //     $(".info").toggle();
+    //   })
+
     function revealInfo() {
-        $(".instructions").show().animate({
+        let scrollVal = $(window).scrollTop();
+        $(".instructions").show().css("top", scrollVal+30).animate({
             height: instructionsHeight
         }, 300);
         infoActive = true;

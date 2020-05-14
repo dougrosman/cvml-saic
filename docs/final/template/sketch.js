@@ -22,6 +22,8 @@ let x = 0;
 let y = 0;
 let easing = 0.05;
 
+let locked = false;
+
 function preload(){
   brush1 = loadImage("images/ouroboros_brush1.png");
   brush2 = loadImage("images/ouroboros_brush2.png");
@@ -152,19 +154,104 @@ function keyPressed() {
     $(".fa-volume-mute").hide();
     brush5_sound.play();
   }
+
+  if(key == 's'){
+    save("ouroboros.png");
+  }
 }
 
+function touchMoved() {
+
+  if(locked){
+    // $(window).scrollTop(110);
+    return false;
+  } else {
+    return true;
+  }
+  
+}
 
 $(document).ready(function(){
 
   $(".mute").click(function(){
-    $(".fas").toggle();
+    $(".fa-volume-up").toggle();
+    $(".fa-volume-mute").toggle();
     brush1_sound.stop();
     brush2_sound.stop();
     brush3_sound.stop();
     brush4_sound.stop();
     brush5_sound.stop();
   })
+
+  $(".screen-lock").click(function(){
+    $(window).scrollTop(120);
+    $(".brush-buttons-toggler").toggle();
+    $("#sketch").css("margin", "70px 0 10px 0")
+    $(".fa-lock").toggle();
+    $(".fa-lock-open").toggle();
+    locked = !locked;
+
+  })
+
+  $("#b1").click(function(){
+    brush1_draw = true;
+    brush2_draw = false;
+    brush3_draw = false;
+    brush4_draw = false;
+    brush5_draw = false;
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
+    brush1_sound.play();
+  })
+
+  $("#b2").click(function(){
+    brush1_draw = false;
+    brush2_draw = true;
+    brush3_draw = false;
+    brush4_draw = false;
+    brush5_draw = false;
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
+    brush1_sound.play();
+  })
+
+  $("#b3").click(function(){
+    brush1_draw = false;
+    brush2_draw = false;
+    brush3_draw = true;
+    brush4_draw = false;
+    brush5_draw = false;
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
+    brush1_sound.play();
+  })
+
+  $("#b4").click(function(){
+    brush1_draw = false;
+    brush2_draw = false;
+    brush3_draw = false;
+    brush4_draw = true;
+    brush5_draw = false;
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
+    brush1_sound.play();
+  })
+
+  $("#b5").click(function(){
+    brush1_draw = false;
+    brush2_draw = false;
+    brush3_draw = false;
+    brush4_draw = false;
+    brush5_draw = true;
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
+    brush1_sound.play();
+  })
+
+  $("#bsave").click(function(){
+    save("ouroboros.png");
+  })
+
 })
 
 
