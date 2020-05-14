@@ -218,7 +218,7 @@ $(document).ready(function(){
     brush5_draw = false;
     $(".fa-volume-up").show();
     $(".fa-volume-mute").hide();
-    brush1_sound.play();
+    brush1_sound.
   })
 
   $("#b3").click(function(){
