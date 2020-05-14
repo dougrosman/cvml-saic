@@ -100,6 +100,7 @@ header > * {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .gallery {
@@ -353,8 +354,17 @@ header > * {
         padding: 6px 16px;
     }
 
+    .main-content {
+        overflow-x: hidden;
+    }
+
     .written-content {
         width: 88vw;
+    }
+
+    .ziyu {
+        /* position: relative */
+        transform: translate(-50%, 0);
     }
 
   }

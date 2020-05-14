@@ -28,10 +28,7 @@ function setup() {
   capture = createCapture(constraints);
   // capture.elt.setAttribute('playsinline', '');
   capture.hide();
-  randomPattern();
-  NumStrip = random(Num);
-  mode = random(style);
-  randNum = random(Num2);
+  generatePattern();
 }
 
 
@@ -127,6 +124,13 @@ function draw() {
   image(capture, 0, 0);
 }
 
+function generatePattern() {
+  randomPattern();
+  NumStrip = random(Num);
+  mode = random(style);
+  randNum = random(Num2);
+}
+
 function randomPattern() {
   let pattern0 = [80, 80, 80, 80, 80, 80, 80, 80];
   let pattern1 = [10, 10, 10, 10, 10, 10, 10, 10, 80, 80, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 80, 80, 10, 10, 10, 10, 10, 10, 10, 10];
@@ -145,6 +149,9 @@ function keyPressed() {
 
   if(key == 's'){
     save("ziyuzhang.png");
+  }
+  else if(key == 'r'){
+    generatePattern();
   }
 }
 
