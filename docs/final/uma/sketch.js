@@ -43,6 +43,7 @@ function preload(){
 let ratio = 1.15;
 
 function setup() {
+  background("#fefefe");
   let canvas = createCanvas(windowWidth/ratio, windowHeight/(ratio*ratio));
   canvas.parent("#sketch");
 }
@@ -166,6 +167,10 @@ function keyPressed() {
   if(key == 's'){
     save("ouroboros.png");
   }
+
+  if(key == 'c'){
+    background('#fefefe');
+  }
 }
 
 function touchMoved() {
@@ -204,6 +209,8 @@ $(document).ready(function(){
     locked = !locked;
 
   })
+
+  
 
   $("#b1").click(function(){
     $(".brush-btn").css("color", "#111").css("background-color", "#fefefe");
@@ -283,6 +290,11 @@ $(document).ready(function(){
 
   $("#bsave").click(function(){
     save("ouroboros.png");
+  })
+
+  $("#bclear").click(function(){
+    background("#fefefe");
+
   })
 
 })
