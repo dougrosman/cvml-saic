@@ -15,7 +15,7 @@ body {
 header {
     width: 100%;
     max-width: 900px;
-    margin: 30px auto;
+    margin: 40px auto;
     text-align: center;
     
 }
@@ -63,22 +63,6 @@ header > * {
     font-size: calc(.6rem + .1vw);
     padding: 2px;
     margin: 2px 30% 15px 30%;
-}
-
-.home {
-    display: block;
-    text-decoration: none;
-    color: #111;
-    font-size: 1rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-    padding: 8px;
-}
-
-.home:hover {
-    color: salmon;
 }
 
 .main-link {
@@ -165,6 +149,92 @@ header > * {
 #sketch {
     margin: 30px 0;
 }
+
+.top-bar{
+    display: flex;
+    width: 92vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.home {
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+}
+
+.home:hover {
+    color: salmon;
+}
+
+.help {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    background-color: #111;
+    color: #fefefe;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: .25;
+}
+
+.info:hover {
+    background-color: salmon;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.mute {
+    color: #111;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: .25;
+}
+
+.mute:hover {
+    color: salmon;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.fa-volume-mute {
+    display: none;
+}
+
+.instructions {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-size: .65rem;
+    text-align: left;
+    width: 50%;
+    height: max-content;
+    opacity: 0;
+    max-width: 140px;
+    overflow-y: hidden;
+    box-shadow: 2px 2px 4px 0px #111;
+    background-color: #fefefe;
+    
+}
+.instructions p {
+    padding: 10px;
+}
+
+
 
 @media only screen 
   and (min-device-width: 320px) 

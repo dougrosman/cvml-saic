@@ -1,20 +1,3 @@
-
-  
-let ratio = 1;
-console.log(window.innerWidth);
-console.log(ratio);
-
-if(window.innerWidth > 1200) {
-  ratio = 3;
-} else if(window.innerWidth > 800 && window.innerWidth < 1200) {
-  ratio = 2;
-} else {
-  rato = 1.25;
-}
-
-console.log(ratio)
-
-
 let brush1;
 let brush2;
 let brush3;
@@ -54,24 +37,15 @@ function preload(){
   brush5_sound = loadSound('sounds/brush5_sound.wav');
 }
 
+let ratio = 1.15;
+
 function setup() {
-  let canvas = createCanvas(windowWidth/ratio, windowWidth/ratio);
+  let canvas = createCanvas(windowWidth/ratio, windowHeight/(ratio*ratio));
   canvas.parent("#sketch");
 }
 
 function windowResized() {
-
-  if(windowWidth >= 1200) {
-    ratio = 3;
-  }
-  if(windowWidth >= 800 && windowWidth < 1200) {
-    ratio = 2;
-  }
-  if(windowWidth < 800) {
-    rato = 1.25;
-  }
-  console.log(ratio)
-  resizeCanvas(windowWidth/ratio, windowHeight/ratio);
+  resizeCanvas(windowWidth/ratio, windowHeight/(ratio*ratio));
 }
 
 function draw() {
@@ -128,7 +102,8 @@ function keyPressed() {
     brush3_draw = false;
     brush4_draw = false;
     brush5_draw = false;
-    
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
     brush1_sound.play();
   
   }
@@ -139,7 +114,8 @@ function keyPressed() {
     brush3_draw = false;
     brush4_draw = false;
     brush5_draw = false;
-    
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
     brush2_sound.play();
   }
   
@@ -149,7 +125,8 @@ function keyPressed() {
     brush3_draw = true;
     brush4_draw = false;
     brush5_draw = false;
-    
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
     brush3_sound.play();
   }
   
@@ -159,20 +136,36 @@ function keyPressed() {
     brush3_draw = false;
     brush4_draw = true;
     brush5_draw = false;
-    
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
     brush4_sound.play();
   }
   
   if(key == '5') {
+    
     brush1_draw = false;
     brush2_draw = false;
     brush3_draw = false;
     brush4_draw = false;
     brush5_draw = true;
-  
+    $(".fa-volume-up").show();
+    $(".fa-volume-mute").hide();
     brush5_sound.play();
   }
 }
+
+
+$(document).ready(function(){
+
+  $(".mute").click(function(){
+    $(".fas").toggle();
+    brush1_sound.stop();
+    brush2_sound.stop();
+    brush3_sound.stop();
+    brush4_sound.stop();
+    brush5_sound.stop();
+  })
+})
 
 
 
