@@ -170,6 +170,7 @@ $(document).ready(function(){
 
   $(".screen-lock").click(function(){
     $(window).scrollTop(120);
+    $(".brush-buttons-toggler").toggle();
     $("#sketch").css("margin", "70px 0 10px 0")
     $(".fa-lock").toggle();
     $(".fa-lock-open").toggle();
@@ -177,8 +178,8 @@ $(document).ready(function(){
 
   })
 
-  $("#bsave").click(function(){
-    save("ouroboros.png");
+  $("#breset").click(function(){
+    generatePattern();
   })
 })
 
