@@ -310,8 +310,8 @@ header > * {
     }
 
     #sketch {
-        overflow: scroll;
-        margin: 30px 0;
+        overflow: hidden;
+        margin: 30px auto;
     }
 
     .screen-lock {

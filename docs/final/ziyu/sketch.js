@@ -3,9 +3,6 @@ let ratio = 1.15;
 let w = 640;
 let h = 480;
 
-let width = 640;
-let height = 480;
-
 let tmpData = [];
 let tmpImageLeft = [];
 let tmpImageTop = [];
@@ -21,15 +18,6 @@ let oldFrame;
 let pattern = [160, 80, 40, 40, 40, 40, 80, 160];
 
 function setup() {
-
-  if(windowWidth < 450) {
-    width = 360;
-    height = 640;
-
-    w = 360;
-    h = 640;
-    
-  }
   
   let canvas = createCanvas(w, h);
   canvas.parent("#sketch");
@@ -38,7 +26,7 @@ function setup() {
   let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
   
   capture = createCapture(constraints);
-  capture.elt.setAttribute('playsinline', '');
+  // capture.elt.setAttribute('playsinline', '');
   capture.hide();
   randomPattern();
   NumStrip = random(Num);
