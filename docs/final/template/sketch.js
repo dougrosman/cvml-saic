@@ -194,6 +194,9 @@ $(document).ready(function(){
   })
 
   $("#b1").click(function(){
+    $(".brush-btn").css("color", "#111");
+    $(this).css("color", "salmon");
+    
     brush1_draw = true;
     brush2_draw = false;
     brush3_draw = false;
@@ -205,6 +208,9 @@ $(document).ready(function(){
   })
 
   $("#b2").click(function(){
+    $(".brush-btn").css("color", "#111");
+    $(this).css("color", "salmon");
+    
     brush1_draw = false;
     brush2_draw = true;
     brush3_draw = false;
@@ -216,6 +222,9 @@ $(document).ready(function(){
   })
 
   $("#b3").click(function(){
+    $(".brush-btn").css("color", "#111");
+    $(this).css("color", "salmon");
+    
     brush1_draw = false;
     brush2_draw = false;
     brush3_draw = true;
@@ -227,6 +236,9 @@ $(document).ready(function(){
   })
 
   $("#b4").click(function(){
+    $(".brush-btn").css("color", "#111");
+    $(this).css("color", "salmon");
+    
     brush1_draw = false;
     brush2_draw = false;
     brush3_draw = false;
@@ -238,6 +250,9 @@ $(document).ready(function(){
   })
 
   $("#b5").click(function(){
+    $(".brush-btn").css("color", "#111");
+    $(this).css("color", "salmon");
+    
     brush1_draw = false;
     brush2_draw = false;
     brush3_draw = false;
