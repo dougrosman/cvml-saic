@@ -101,6 +101,12 @@ function touchMoved() {
 
 $(document).ready(function(){
   
+  $(window).orientationchange(function(){
+    
+    
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
+
+  })
 
   $(window).scroll(function(){
     if(locked) {
