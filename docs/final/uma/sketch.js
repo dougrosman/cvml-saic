@@ -46,6 +46,7 @@ function setup() {
   background("#fefefe");
   let canvas = createCanvas(windowWidth/ratio, windowHeight/(ratio*ratio));
   canvas.parent("#sketch");
+  imageMode(CENTER);
 }
 
 function windowResized() {
@@ -53,51 +54,51 @@ function windowResized() {
 }
 
 function draw() {
-  //background(220);
-  imageMode(CENTER);
   
-  if(launch){
-    if(mouseX > 0) {
-      brush1_draw = true;
-      //brush1_sound = true;
-      launch = false;
+  if(loop){
+    if(launch){
+      if(mouseX > 0) {
+        brush1_draw = true;
+        launch = false;
+      }
     }
-  }
-  
-  let targetX = mouseX;
-  let dx = targetX - x; 
-  x += dx * easing;
-  
-  let targetY = mouseY;
-  let dy = targetY - y;
-  y += dy * easing;
-  
-  //brush1
-  if(brush1_draw) {
-    image(brush1, x, y, 80, 80);
-  }
-  
-  //brush2
-  if(brush2_draw) {
-    image(brush2, x, y, 50, 50);
-  }
-  
-  //brush3
-  if(brush3_draw) {
-    image(brush3, x, y, 100, 100);
-  }
-  
-  //brush4
-  if(brush4_draw) {
-    image(brush4, x, y, 30, 30);
-  }
-  
-  //brush5
-  if(brush5_draw) {
-    image(brush5, x, y, 120, 120);
+    
+    let targetX = mouseX;
+    let dx = targetX - x; 
+    x += dx * easing;
+    
+    let targetY = mouseY;
+    let dy = targetY - y;
+    y += dy * easing;
+    
+    //brush1
+    if(brush1_draw) {
+      image(brush1, x, y, 80, 80);
+    }
+    
+    //brush2
+    if(brush2_draw) {
+      image(brush2, x, y, 50, 50);
+    }
+    
+    //brush3
+    if(brush3_draw) {
+      image(brush3, x, y, 100, 100);
+    }
+    
+    //brush4
+    if(brush4_draw) {
+      image(brush4, x, y, 30, 30);
+    }
+    
+    //brush5
+    if(brush5_draw) {
+      image(brush5, x, y, 120, 120);
+    }
+  } else {
+    // do nothing
   }
 }
-
 
 
 function keyPressed() {
@@ -286,6 +287,12 @@ $(document).ready(function(){
     if(!muted){
       brush5_sound.play();
     }
+  })
+
+  $(".play-pause").click(function(){
+    $(".fa-pause").toggle();
+    $(".fa-play").toggle();
+    loop = !loop;
   })
 
   $("#bsave").click(function(){

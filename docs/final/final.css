@@ -169,13 +169,13 @@ header > * {
 }
 
 .help {
-    width: 60px;
+    width: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.info {
+.top-icon {
     color: #111;
     width: 25px;
     height: 25px;
@@ -186,27 +186,14 @@ header > * {
     opacity: .35;
 }
 
-.info:hover {
+.top-icon:hover {
     color: salmon;
     cursor: pointer;
     opacity: 1;
 }
 
 .mute {
-    color: #111;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    opacity: .25;
-}
-
-.mute:hover {
-    color: salmon;
-    cursor: pointer;
-    opacity: 1;
+    margin-left: 10px;
 }
 
 .fa-volume-mute {
@@ -233,6 +220,10 @@ header > * {
 }
 
 .screen-lock {
+    display: none;
+}
+
+.fa-play {
     display: none;
 }
 
@@ -319,6 +310,16 @@ header > * {
         display: block;
         color: #111;
         opacity: 0.35;
+        margin-left: 20px;
+        margin-top: -2px;
+    }
+
+    .play-pause {
+        margin-top: 0px;
+    }
+
+    .fa-play {
+        display: none;
     }
     
     .fa-lock {
@@ -326,11 +327,11 @@ header > * {
     }
 
     .help {
-        width: max-content;
+        width: 150px;
     }
 
     .mute {
-        margin-left: 10px;
+        margin-left: 6px;
     }
 
     .site-title{
@@ -346,6 +347,10 @@ header > * {
         display: flex;
         justify-content: space-evenly;
         width: 100%; 
+    }
+
+    .info {
+        margin-top: -2px;
     }
 
     .brush-btn {
@@ -364,8 +369,6 @@ header > * {
 
     .ziyu {
         position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
     }
 
   }
