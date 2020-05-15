@@ -148,7 +148,13 @@ function randomPattern() {
 
 }
 
-
+function windowResized() {
+  if(window.innerWidth < 400) {
+    $(".ziyu").css("left", `${-(640-window.innerWidth)/2}px`);
+  } else {
+    $(".ziyu").css("left", `0`);
+  }
+}
 
 function keyPressed() {
 
@@ -168,13 +174,15 @@ function touchMoved() {
   } else {
     return true;
   }
-  
 }
 
 $(document).ready(function(){
 
 
-  $(".ziyu").css("left", `${-(640-window.innerWidth)/2}px`);
+  if(window.innerWidth < 400) {
+    $(".ziyu").css("left", `${-(640-window.innerWidth)/2}px`);
+  }
+  
 
   $(".screen-lock").click(function(){
     $(window).scrollTop(120);

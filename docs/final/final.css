@@ -248,6 +248,10 @@ header > * {
     display: none;
 }
 
+.ziyu {
+    position: relative;
+}
+
 
 @media only screen 
   and (min-device-width: 320px) 
@@ -314,10 +318,6 @@ header > * {
         margin-top: -2px;
     }
 
-    .play-pause {
-        margin-top: 0px;
-    }
-
     .fa-play {
         display: none;
     }
@@ -366,11 +366,6 @@ header > * {
     .written-content {
         width: 88vw;
     }
-
-    .ziyu {
-        position: relative;
-    }
-
   }
 
 
