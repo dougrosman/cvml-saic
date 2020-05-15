@@ -92,7 +92,7 @@ function keyPressed() {
 
 function touchMoved() {
   if(locked){
-    $(window).scrollTop(120);
+    $(window).scrollTop(100);
     return false;
   } else {
     return true;
@@ -104,7 +104,7 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     if(locked) {
-      $(window).scrollTop(120);
+      $(window).scrollTop(100);
     }
   })
 
