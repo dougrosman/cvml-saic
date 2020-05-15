@@ -181,7 +181,7 @@ $(document).ready(function(){
 
 
   if(window.innerWidth < 400) {
-    $(".ziyu").css("left", `${-(640-window.innerWidth)/2}px`);
+    $(".ziyu").css("left", `${-(640-window.innerWidth)/4}px`);
   }
   
 
