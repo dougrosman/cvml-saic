@@ -5,6 +5,7 @@ let threshold02 = 240;
 let capture;
 let w;
 let h;
+let locked = false;
 
 let phone = false;
 
@@ -100,6 +101,12 @@ function touchMoved() {
 
 $(document).ready(function(){
   $(".brush-buttons-toggler").toggle();
+
+  $(window).scroll(function(){
+    if(locked) {
+      $(window).scrollTop(120);
+    }
+  })
 
   if(window.innerWidth < 400) {
     $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
