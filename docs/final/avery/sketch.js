@@ -71,7 +71,7 @@ function draw() {
 
 function windowResized() {
   if(window.innerWidth < 640) {
-    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/8)}px`);
   } else {
     $(".center-sketch").css("left", `0`);
   }
@@ -94,7 +94,7 @@ function touchMoved() {
 
 $(document).ready(function(){
   if(window.innerWidth < 400) {
-    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/8)}px`);
   }
 
   $(".screen-lock").click(function(){
@@ -112,8 +112,8 @@ $(document).ready(function(){
     loop = !loop;
   })
 
-  $("#breset").click(function(){
-    generatePattern();
+  $("#bsave").click(function(){
+    save("averyjohnson.png");
   })
 })
 
