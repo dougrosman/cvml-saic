@@ -21,7 +21,7 @@ if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
 function setup() {
   let canvas = createCanvas(w, h);
   if(phone){
-    pixelDensity(2);
+    pixelDensity(1);
   }
   canvas.parent("sketch");
   let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
@@ -99,7 +99,7 @@ function touchMoved() {
 }
 
 $(document).ready(function(){
-
+  $(".brush-buttons-toggler").toggle();
 
   if(window.innerWidth < 400) {
     $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
@@ -109,7 +109,6 @@ $(document).ready(function(){
 
   $(".screen-lock").click(function(){
     $(window).scrollTop(120);
-    $(".brush-buttons-toggler").toggle();
     $("#sketch").css("margin", "70px 0 10px 0")
     $(".fa-lock").toggle();
     $(".fa-lock-open").toggle();
