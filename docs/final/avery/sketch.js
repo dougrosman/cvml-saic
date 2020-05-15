@@ -61,7 +61,7 @@ function draw() {
 
 function windowResized() {
   if(window.innerWidth < 640) {
-    $(".center-sketch").css("left", `${-(640-window.innerWidth)/4}px`);
+    $(".center-sketch").css("left", `${-(w-window.innerWidth)/4}px`);
   } else {
     $(".center-sketch").css("left", `0`);
   }
