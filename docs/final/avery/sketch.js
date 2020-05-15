@@ -8,44 +8,6 @@ let h;
 
 let phone;
 
-$(document).ready(function(){
-
-  if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
-    w = 640;
-    h = 480;
-    phone = true;
-  } else {
-    w = 1280;
-    h = 720;
-  }
-
-  if(window.innerWidth < 400) {
-    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
-  } else {
-    $(".center-sketch").css("left", `unset`);
-  }
-
-  $(".screen-lock").click(function(){
-    $(window).scrollTop(120);
-    $(".brush-buttons-toggler").toggle();
-    $("#sketch").css("margin", "70px 0 10px 0")
-    $(".fa-lock").toggle();
-    $(".fa-lock-open").toggle();
-    // $("#bsave").css("margin", "-100px");
-    locked = !locked;
-  })
-
-  $(".play-pause").click(function(){
-    $(".fa-pause").toggle();
-    $(".fa-play").toggle();
-    loop = !loop;
-  })
-
-  $("#bsave").click(function(){
-    save("averyjohnson.png");
-  })
-})
-
 function setup() {
   let canvas = createCanvas(w, h);
   if(phone){
@@ -125,6 +87,44 @@ function touchMoved() {
     return true;
   }
 }
+
+$(document).ready(function(){
+
+  if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
+    w = 640;
+    h = 480;
+    phone = true;
+  } else {
+    w = 1280;
+    h = 720;
+  }
+  
+  if(window.innerWidth < 400) {
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
+  } else {
+    $(".center-sketch").css("left", `unset`);
+  }
+
+  $(".screen-lock").click(function(){
+    $(window).scrollTop(120);
+    $(".brush-buttons-toggler").toggle();
+    $("#sketch").css("margin", "70px 0 10px 0")
+    $(".fa-lock").toggle();
+    $(".fa-lock-open").toggle();
+    // $("#bsave").css("margin", "-100px");
+    locked = !locked;
+  })
+
+  $(".play-pause").click(function(){
+    $(".fa-pause").toggle();
+    $(".fa-play").toggle();
+    loop = !loop;
+  })
+
+  $("#bsave").click(function(){
+    save("averyjohnson.png");
+  })
+})
 
 
 
