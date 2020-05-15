@@ -6,7 +6,17 @@ let capture;
 let w;
 let h;
 
-let phone;
+let phone = false;
+
+if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
+  w = 640;
+  h = 480;
+  phone = true;
+} else {
+  w = 1280;
+  h = 720;
+}
+
 
 function setup() {
   let canvas = createCanvas(w, h);
@@ -90,15 +100,7 @@ function touchMoved() {
 
 $(document).ready(function(){
 
-  if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
-    w = 640;
-    h = 480;
-    phone = true;
-  } else {
-    w = 1280;
-    h = 720;
-  }
-  
+
   if(window.innerWidth < 400) {
     $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
   } else {
