@@ -8,8 +8,8 @@ let h;
 
 
 if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
-  w = 360;
-  h = 640;
+  w = 640;
+  h = 480;
 } else {
   w = 1280;
   h = 720;
@@ -85,7 +85,7 @@ function keyPressed() {
 
 function touchMoved() {
   if(locked){
-    // $(window).scrollTop(110);
+    $(window).scrollTop(120);
     return false;
   } else {
     return true;
@@ -103,6 +103,7 @@ $(document).ready(function(){
     $("#sketch").css("margin", "70px 0 10px 0")
     $(".fa-lock").toggle();
     $(".fa-lock-open").toggle();
+    $("#bsave").css("margin", "-100px");
     locked = !locked;
   })
 
