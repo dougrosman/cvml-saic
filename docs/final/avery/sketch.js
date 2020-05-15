@@ -22,6 +22,7 @@ function setup() {
   capture = createCapture(constraints);
   capture.hide();
   angleMode(DEGREES);
+  console.log(capture);
 }
 
 function draw() {
@@ -57,12 +58,12 @@ function draw() {
       }
     }
     capture.updatePixels();
-    
     push();
       translate(w, 0);
       scale(-1, 1);
       image(capture, 0, 0);
     pop();
+    
   } else {
     // do nothing
   }
@@ -70,7 +71,7 @@ function draw() {
 
 function windowResized() {
   if(window.innerWidth < 640) {
-    $(".center-sketch").css("left", `${-(w-window.innerWidth)/4}px`);
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
   } else {
     $(".center-sketch").css("left", `0`);
   }
@@ -93,7 +94,7 @@ function touchMoved() {
 
 $(document).ready(function(){
   if(window.innerWidth < 400) {
-    $(".center-sketch").css("left", `${-(w-window.innerWidth)/4}px`);
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
   }
 
   $(".screen-lock").click(function(){
