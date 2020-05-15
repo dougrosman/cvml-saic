@@ -18,16 +18,10 @@ let oldFrame;
 let pattern = [160, 80, 40, 40, 40, 40, 80, 160];
 
 function setup() {
-  
   let canvas = createCanvas(w, h);
   canvas.parent("#sketch");
-  pixelDensity(1);
-
-
   let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
-  
   capture = createCapture(constraints);
-  // capture.elt.setAttribute('playsinline', '');
   capture.hide();
   generatePattern();
 }
@@ -45,18 +39,11 @@ function draw() {
         let FlipX = x + (width / 2 - x) * 2 - 1
         let index = (x + y * width) * 4;
         let MirrorIndex = (FlipX + randNum + y * width) * 4;
-
-
         let FlipY = y + (height / 2 - y) * 2 - 1
         let MirrorIndexY = (x + randNum + FlipY * width) * 4;
-
-      
         let MirrorIndexXY = (FlipX + randNum + FlipY * width) * 4;
-
         let FlipXOffset = y + (width / 2 - x) * 2 - 1
-
         let MirrorIndexOffset = (FlipXOffset + randNum + y * width) * 4;
-
 
         tmpImageLeft[index + 0] = capture.pixels[MirrorIndex + 0];
         tmpImageLeft[index + 1] = capture.pixels[MirrorIndex + 1];
@@ -113,7 +100,6 @@ function draw() {
                   capture.pixels[index + 0] = capture.pixels[index + 0] + Adj;
                   capture.pixels[index + 1] = capture.pixels[index + 1] + Adj;
                   capture.pixels[index + 2] = capture.pixels[index + 2] + Adj;
-              
                 }
               }
             }
@@ -122,7 +108,6 @@ function draw() {
         }
       }
     }
-
     capture.updatePixels();
     image(capture, 0, 0);
   } else {
@@ -151,14 +136,13 @@ function randomPattern() {
 
 function windowResized() {
   if(window.innerWidth < 640) {
-    $(".ziyu").css("left", `${-(640-window.innerWidth)/4}px`);
+    $(".center-sketch").css("left", `${-(w-window.innerWidth)/4}px`);
   } else {
-    $(".ziyu").css("left", `0`);
+    $(".center-sketch").css("left", `0`);
   }
 }
 
 function keyPressed() {
-
   if(key == 's'){
     save("ziyuzhang.png");
   }
@@ -179,11 +163,9 @@ function touchMoved() {
 
 $(document).ready(function(){
 
-
   if(window.innerWidth < 400) {
-    $(".ziyu").css("left", `${-(640-window.innerWidth)/4}px`);
+    $(".center-sketch").css("left", `${-(w-window.innerWidth)/4}px`);
   }
-  
 
   $(".screen-lock").click(function(){
     $(window).scrollTop(120);
@@ -192,7 +174,6 @@ $(document).ready(function(){
     $(".fa-lock").toggle();
     $(".fa-lock-open").toggle();
     locked = !locked;
-
   })
 
   $(".play-pause").click(function(){

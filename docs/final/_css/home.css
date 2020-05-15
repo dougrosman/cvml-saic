@@ -1,0 +1,89 @@
+.site-subtitle {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.instructor {
+    font-size: .75rem;
+}
+.instructor > * {
+    font-weight: 200;
+}
+
+.main-menu {
+    width: 35%;
+    min-width: 130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    font-size: calc(.6rem + .1vw);
+    padding: 2px;
+    margin: 2px 30% 15px 30%;
+}
+
+.main-link {
+    text-decoration: none;
+    color: #111;
+    font-size: calc(.6rem + .1vw);
+    padding: 2px;
+    margin: 1px 6px;
+}
+
+.main-menu > a:hover {
+    color: salmon;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.image-card {
+    position: relative;
+    flex: 1 1 30%;
+    min-width: 250px;
+    max-width: 500px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1110;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fefefe00;
+}
+
+.image-card img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -5px;
+}
+
+.overlay {
+    transition: background-color .25s, color .25s;
+}
+
+.image-card:hover .overlay {
+    background-color: #111b;
+    color: salmon;
+}
+
+.screen-lock {
+    display: none;
+}

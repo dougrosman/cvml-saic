@@ -56,13 +56,13 @@ function windowResized() {
 function draw() {
   
   if(loop){
+
     if(launch){
       if(mouseX > 0) {
         brush1_draw = true;
         launch = false;
       }
     }
-    
     let targetX = mouseX;
     let dx = targetX - x; 
     x += dx * easing;
@@ -95,8 +95,18 @@ function draw() {
     if(brush5_draw) {
       image(brush5, x, y, 120, 120);
     }
+
   } else {
     // do nothing
+  }
+}
+
+function touchMoved() {
+  if(locked){
+    // $(window).scrollTop(110);
+    return false;
+  } else {
+    return true;
   }
 }
 
@@ -174,20 +184,9 @@ function keyPressed() {
   }
 }
 
-function touchMoved() {
 
-  if(locked){
-    // $(window).scrollTop(110);
-    return false;
-  } else {
-    return true;
-  }
-  
-}
 
 $(document).ready(function(){
-
-  
 
   $(".mute").click(function(){
     $(".fa-volume-up").toggle();
@@ -211,7 +210,11 @@ $(document).ready(function(){
 
   })
 
-  
+  $(".play-pause").click(function(){
+    $(".fa-pause").toggle();
+    $(".fa-play").toggle();
+    loop = !loop;
+  })
 
   $("#b1").click(function(){
     $(".brush-btn").css("color", "#111").css("background-color", "#fefefe");
@@ -226,7 +229,6 @@ $(document).ready(function(){
     if(!muted){
       brush1_sound.play();
     }
-    
   })
 
   $("#b2").click(function(){
@@ -287,12 +289,6 @@ $(document).ready(function(){
     if(!muted){
       brush5_sound.play();
     }
-  })
-
-  $(".play-pause").click(function(){
-    $(".fa-pause").toggle();
-    $(".fa-play").toggle();
-    loop = !loop;
   })
 
   $("#bsave").click(function(){
