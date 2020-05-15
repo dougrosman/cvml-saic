@@ -3,8 +3,17 @@ let threshold = 80;
 let threshold01 = 160;
 let threshold02 = 240;
 let capture;
-let w = 1280;
-let h = 720;
+let w;
+let h;
+
+
+if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
+  w = 360;
+  h = 640;
+} else {
+  w = 1280;
+  h = 720;
+}
 
 function setup() {
   let canvas = createCanvas(w, h);
