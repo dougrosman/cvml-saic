@@ -149,7 +149,7 @@ function randomPattern() {
 }
 
 function windowResized() {
-  if(window.innerWidth < 400) {
+  if(window.innerWidth < 640) {
     $(".ziyu").css("left", `${-(640-window.innerWidth)/2}px`);
   } else {
     $(".ziyu").css("left", `0`);
