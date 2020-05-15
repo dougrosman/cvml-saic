@@ -100,7 +100,7 @@ function touchMoved() {
 }
 
 $(document).ready(function(){
-  $(".brush-buttons-toggler").toggle();
+  
 
   $(window).scroll(function(){
     if(locked) {
@@ -109,6 +109,7 @@ $(document).ready(function(){
   })
 
   if(window.innerWidth < 400) {
+    $(".brush-buttons-toggler").toggle();
     $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
   } else {
     $(".center-sketch").css("left", `unset`);
