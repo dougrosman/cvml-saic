@@ -3,29 +3,40 @@ let threshold = 80;
 let threshold01 = 160;
 let threshold02 = 240;
 let capture;
-let w = 640;
-let h = 480;
+let w;
+let h;
 let locked = false;
 let newCapture = false;
 let canvas;
-if(window.orientation == 0) {
-  $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
-}
-// alert("not-jquery");
-alert("v9");
 
-// if(window.orientation == 0) {
-//   w = 640;
-//   h = 480;
-// } else {
-//   w = 960;
-//   h = 540;
-// }
+// alert("v11");
+
+if(window.orientation == 0) {
+  w = 352;
+  h = 288;
+  // $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
+  // alert("portrait");
+  alert(window.orientation);
+} else if(window.orientation == 90) {
+  alert(window.orientation);
+  w = 640;
+  h = 480;
+  // $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
+  // alert("landscape");
+} else {
+  alert(window.orientation);
+  w = 1280;
+  h = 720;
+  // alert("desktop");
+}
 
 function setup() {
   canvas = createCanvas(w, h);
+  alert("w x h: " + w + " x " + h);
   
   background(255, 0, 0);
+  textAlign(CENTER);
+  textSize(50);
   canvas.parent("sketch");
   let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
   capture = createCapture(constraints);
@@ -47,7 +58,6 @@ function draw() {
 
     capture.loadPixels();
 
-    //if(capture.length > 0){
       threshold = map(sin(frameCount/10),-1,1,1,255);
 
       for (var y = 0; y < h; y++ ) {
@@ -83,19 +93,13 @@ function draw() {
         scale(-1, 1);
         image(capture, 0, 0);
       pop();
-    //}
-    stroke(0, 255, 255);
+    fill(0, 255, 255);
     text(`${width} + ${height}`, width/2, height/2);
   } else {
     // do nothing
   }
 }
 
-function windowResized() {
-  if(window.orientation == 0) {
-    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
-  }
-}
 function keyPressed() {
   if(key == 's'){
     save("averyjohnson.png");
@@ -111,31 +115,27 @@ function touchMoved() {
   }
 }
 
+function windowResized() {
+  // if(window.innerWidth < w) {
+  //   $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
+  // } else {
+  //   $(".center-sketch").css("left", `unset`);
+  // }
+}
+
 $(document).ready(function(){
 
-  alert("jquery");
-
-  if(window.orientation == 0 || window.orientation == 1) {
+  if(window.orientation == 0 || window.orientation == 90) {
     $(".brush-buttons-toggler").show();
   } else {
     $(".brush-buttons-toggler").hide();
-    
   }
   
   $(window).on("orientationchange", function(){ 
-    if(window.orientation == 0){
-      
-      // w = 352;
-      // h = 288;
-      // alert("portrait"+w+" "+h);
-      $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
-    } else {
-      alert("landscape");
-      // w = 960;
-      // h = 540;
-      $(".center-sketch").css("left", `unset`);
-    }
-    newCapture = true;
+  }, function(){
+    
+    // $(".center-sketch").css("left", `${-Math.abs((w-window.innerHeight)/2)}px`);
+    alert("ok " + window.innerWidth)
   })
 
   $(window).scroll(function(){
@@ -163,6 +163,19 @@ $(document).ready(function(){
     save("averyjohnson.png");
   })
 })
+
+function fixSize(){
+  if(window.orientation == 0){
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
+    // alert("portrait");
+  } else {
+    $(".center-sketch").css("left", `unset`);
+    // alert("landscape");
+  }
+  // alert("w x h: " + w + " x " + h);
+
+  // newCapture = true;
+}
 
 
 

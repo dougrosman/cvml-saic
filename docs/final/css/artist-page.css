@@ -100,7 +100,7 @@
 #sketch {
     margin: 30px auto;
     width: max-content;
-    position: static;
+    /* position: static; */
 }
 
 .written-content {
@@ -109,5 +109,5 @@
 }
 
 .center-sketch {
-    position: static;
+    position: relative;
 }
