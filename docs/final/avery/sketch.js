@@ -12,7 +12,7 @@ let shouldAlert = true;
 
 // 352, 288
 
-alert("v14");
+alert("v15");
 
 if(window.orientation == 0 || window.orientation == 90) {
   w = 480;
