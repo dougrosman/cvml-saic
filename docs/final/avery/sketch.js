@@ -17,7 +17,7 @@ let shouldAlert = true;
 if(typeof(window.orientation)+"" != "undefined") {
   w = 640;
   h = 480;
-  alert("v19");
+  alert("v20");
 } else {
   w = 1280;
   h = 720;
@@ -33,7 +33,7 @@ function setup() {
   canvas.parent("sketch");
   let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
   capture = createCapture(constraints);
-  capture.hide();
+  // capture.hide();
   capture.loadPixels();
   
   angleMode(DEGREES);
