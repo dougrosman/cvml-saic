@@ -12,21 +12,20 @@ let shouldAlert = true;
 
 // 352, 288
 
-alert("v18");
 
-if(window.orientation == 0 || window.orientation == 90) {
+
+if(typeof(window.orientation)+"" != "undefined") {
   w = 640;
   h = 480;
+  alert("v19");
 } else {
-  alert(window.orientation);
   w = 1280;
   h = 720;
-  // alert("desktop");
 }
 
 function setup() {
   canvas = createCanvas(w, h);
-  alert("w x h: " + w + " x " + h);
+  // alert("w x h: " + w + " x " + h);
   
   background(255, 0, 0);
   textAlign(CENTER);
@@ -35,6 +34,8 @@ function setup() {
   let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
   capture = createCapture(constraints);
   capture.hide();
+  capture.loadPixels();
+  
   angleMode(DEGREES);
 }
 
@@ -80,10 +81,11 @@ function draw() {
         pop();
       fill(0, 255, 255);
       text(`${width} + ${height}`, width/2, height/2);
-      if(shouldAlert) {
-        alert(capture.pixels.length);
-        shouldAlert = false;
-      }
+      
+      // if(shouldAlert) {
+      //   alert(capture.pixels.length);
+      //   shouldAlert = false;
+      // }
     }
   } else {
     // do nothing
@@ -106,7 +108,7 @@ function touchMoved() {
 }
 
 function windowResized() {
-  if(window.innerWidth < w && (window.orientation != 0 || window.orientation != 90)) {
+  if(window.innerWidth < w && (typeof(window.orientation)+"" == "undefined")) {
     $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
   } else {
     $(".center-sketch").css("left", `unset`);
