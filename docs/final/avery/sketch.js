@@ -9,20 +9,11 @@ let locked = false;
 let newCapture = false;
 let canvas;
 
-// alert("v11");
+alert("v12");
 
-if(window.orientation == 0) {
-  w = 352;
-  h = 288;
-  // $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
-  // alert("portrait");
-  alert(window.orientation);
-} else if(window.orientation == 90) {
-  alert(window.orientation);
+if(window.orientation == 0 || window.orientation == 90) {
   w = 640;
   h = 480;
-  // $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
-  // alert("landscape");
 } else {
   alert(window.orientation);
   w = 1280;
@@ -131,12 +122,12 @@ $(document).ready(function(){
     $(".brush-buttons-toggler").hide();
   }
   
-  $(window).on("orientationchange", function(){ 
-  }, function(){
+  // $(window).on("orientationchange", function(){ 
+  // }, function(){
     
-    // $(".center-sketch").css("left", `${-Math.abs((w-window.innerHeight)/2)}px`);
-    alert("ok " + window.innerWidth)
-  })
+  //   // $(".center-sketch").css("left", `${-Math.abs((w-window.innerHeight)/2)}px`);
+  //   alert("ok " + window.innerWidth)
+  // })
 
   $(window).scroll(function(){
     if(locked) {
