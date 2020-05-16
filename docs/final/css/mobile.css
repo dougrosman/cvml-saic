@@ -6,6 +6,11 @@
     .site-title{
         margin-top: 60px;
     }
+
+    .site-title > a {
+        text-decoration: none;
+        color: black;
+    }
     
     .hamburger {
         width: max-content;
