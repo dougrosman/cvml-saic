@@ -7,24 +7,19 @@ let w;
 let h;
 let locked = false;
 let newCapture = false;
-let phone = false;
+let canvas;
 
-if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
-  w = 640;
-  h = 480;
-  phone = true;
+if(window.orientation == 0) {
+  w = 360;
+  h = 640;
 } else {
   w = 1280;
   h = 720;
 }
 
-
 function setup() {
-  let canvas = createCanvas(w, h);
-  // if(phone){
-  //   pixelDensity(1);
-  // }
-
+  canvas = createCanvas(w, h);
+  
   background(255, 0, 0);
   canvas.parent("sketch");
   let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
@@ -36,19 +31,14 @@ function setup() {
 
 function draw() {
   if(loop){
+    
     if(newCapture) {
-      if(window.innerHeight > window.innerWidth) {
-        w = 640;
-        h = 480;
-        phone = true;
-      } else {
-        w = 1280;
-        h = 720;
-      }
+      canvas = createCanvas(w, h);
       let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
       capture = createCapture(constraints);
       newCapture = false;
     }
+
     capture.loadPixels();
     threshold = map(sin(frameCount/10),-1,1,1,255);
 
@@ -117,10 +107,18 @@ function touchMoved() {
 $(document).ready(function(){
   
   $(window).on("orientationchange", function(){
+
+    if(window.orientation == 0) {
+      w = 360;
+      h = 640;
+    } else {
+      w = 1280;
+      h = 720;
+    }
     
     newCapture = true;
     
-    if(window.innerWidth < window.innerHeight){
+    if(window.orientation == 0){
       $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
     } else {
       $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
@@ -129,7 +127,7 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     if(locked) {
-      $(window).scrollTop(100);
+      $(window).scrollTop(110);
     }
   })
 
