@@ -8,8 +8,11 @@ let h = 480;
 let locked = false;
 let newCapture = false;
 let canvas;
-
-alert("v8");
+if(window.orientation == 0) {
+  $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
+}
+// alert("not-jquery");
+alert("v9");
 
 // if(window.orientation == 0) {
 //   w = 640;
@@ -90,13 +93,7 @@ function draw() {
 
 function windowResized() {
   if(window.orientation == 0) {
-    // w = 352;
-    // h = 288;
     $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
-  } else {
-    // w = 960;
-    // h = 540;
-    $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
   }
 }
 function keyPressed() {
@@ -116,6 +113,8 @@ function touchMoved() {
 
 $(document).ready(function(){
 
+  alert("jquery");
+
   if(window.orientation == 0 || window.orientation == 1) {
     $(".brush-buttons-toggler").show();
   } else {
@@ -129,7 +128,7 @@ $(document).ready(function(){
       // w = 352;
       // h = 288;
       // alert("portrait"+w+" "+h);
-      $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
+      $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
     } else {
       alert("landscape");
       // w = 960;
