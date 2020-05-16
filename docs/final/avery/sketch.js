@@ -106,7 +106,7 @@ $(document).ready(function(){
   
   $(window).on("orientationchange", function(){
     
-    alert("cool");
+    // alert("cool");
     
     if(window.innerWidth < window.innerHeight){
       $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);

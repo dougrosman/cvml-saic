@@ -142,6 +142,14 @@ function windowResized() {
   }
 }
 
+$(window).on("orientationchange", function(){  
+  if(window.innerWidth < window.innerHeight){
+    $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
+  } else {
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
+  }
+})
+
 function keyPressed() {
   if(key == 's'){
     save("ziyuzhang.png");
