@@ -9,11 +9,13 @@ let locked = false;
 let newCapture = false;
 let canvas;
 
+// 352, 288
+
 alert("v12");
 
 if(window.orientation == 0 || window.orientation == 90) {
-  w = 640;
-  h = 480;
+  w = 352;
+  h = 288;
 } else {
   alert(window.orientation);
   w = 1280;
