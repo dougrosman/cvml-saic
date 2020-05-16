@@ -35,10 +35,13 @@ function draw() {
   if(loop){
     
     if(newCapture) {
-      // canvas = createCanvas(w, h);
+      resizeCanvas(w, h);
       background(random(255), random(255), random(255));
       let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
-      capture = createCapture(constraints);
+      // capture = createCapture(constraints);
+      capture.size(w, h);
+      stroke(0);
+      text(`${width} + ${height}`, width/2, height/2);
       newCapture = false;
     }
 
