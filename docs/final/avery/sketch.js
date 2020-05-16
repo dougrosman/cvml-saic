@@ -8,6 +8,7 @@ let h;
 let locked = false;
 let newCapture = false;
 let canvas;
+let shouldAlert = true;
 
 // 352, 288
 
@@ -39,16 +40,6 @@ function setup() {
 
 function draw() {
   if(loop){
-    
-    // if(newCapture) {
-    //   // resizeCanvas(w, h);
-    //   background(random(255), random(255), random(255));
-    //   capture.size(w, h);
-    //   stroke(0, 255, 255);
-    //   text(`${width} + ${height}`, width/2, height/2);
-    //   newCapture = false;
-    // }
-
     capture.loadPixels();
 
       threshold = map(sin(frameCount/10),-1,1,1,255);
@@ -88,6 +79,10 @@ function draw() {
       pop();
     fill(0, 255, 255);
     text(`${width} + ${height}`, width/2, height/2);
+    if(shouldAlert) {
+      alert(capture);
+      shouldAlert = false;
+    }
   } else {
     // do nothing
   }
@@ -109,11 +104,11 @@ function touchMoved() {
 }
 
 function windowResized() {
-  // if(window.innerWidth < w) {
-  //   $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
-  // } else {
-  //   $(".center-sketch").css("left", `unset`);
-  // }
+  if(window.innerWidth < w && typeof(window.orientation)==undefined) {
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
+  } else {
+    $(".center-sketch").css("left", `unset`);
+  }
 }
 
 $(document).ready(function(){
@@ -156,19 +151,6 @@ $(document).ready(function(){
     save("averyjohnson.png");
   })
 })
-
-function fixSize(){
-  if(window.orientation == 0){
-    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
-    // alert("portrait");
-  } else {
-    $(".center-sketch").css("left", `unset`);
-    // alert("landscape");
-  }
-  // alert("w x h: " + w + " x " + h);
-
-  // newCapture = true;
-}
 
 
 
