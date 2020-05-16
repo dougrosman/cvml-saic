@@ -47,7 +47,6 @@ function draw() {
       }
       let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
       capture = createCapture(constraints);
-      }
       newCapture = false;
     }
     capture.loadPixels();
