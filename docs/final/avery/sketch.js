@@ -6,7 +6,7 @@ let capture;
 let w;
 let h;
 let locked = false;
-
+let newCapture = false;
 let phone = false;
 
 if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
@@ -21,9 +21,9 @@ if(window.innerWidth < 500 && window.innerHeight > window.innerWidth) {
 
 function setup() {
   let canvas = createCanvas(w, h);
-  if(phone){
-    pixelDensity(1);
-  }
+  // if(phone){
+  //   pixelDensity(1);
+  // }
 
   background(255, 0, 0);
   canvas.parent("sketch");
@@ -36,7 +36,20 @@ function setup() {
 
 function draw() {
   if(loop){
-
+    if(newCapture) {
+      if(window.innerHeight > window.innerWidth) {
+        w = 640;
+        h = 480;
+        phone = true;
+      } else {
+        w = 1280;
+        h = 720;
+      }
+      let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
+      capture = createCapture(constraints);
+      }
+      newCapture = false;
+    }
     capture.loadPixels();
     threshold = map(sin(frameCount/10),-1,1,1,255);
 
@@ -106,7 +119,7 @@ $(document).ready(function(){
   
   $(window).on("orientationchange", function(){
     
-    // alert("cool");
+    newCapture = true;
     
     if(window.innerWidth < window.innerHeight){
       $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
