@@ -9,6 +9,8 @@ let locked = false;
 let newCapture = false;
 let canvas;
 
+alert("v1");
+
 if(window.orientation == 0) {
   w = 352;
   h = 288;
@@ -38,8 +40,8 @@ function draw() {
       resizeCanvas(w, h);
       background(random(255), random(255), random(255));
       let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
-      // capture = createCapture(constraints);
-      capture.size(w, h);
+      capture = createCapture(constraints);
+      // capture.size(w, h);
       stroke(0);
       text(`${width} + ${height}`, width/2, height/2);
       newCapture = false;
@@ -119,15 +121,15 @@ $(document).ready(function(){
       h = 288;
     } else {
       w = 960;
-  h = 540;
+      h = 540;
     }
     
     newCapture = true;
     
     if(window.orientation == 0){
-      $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
-    } else {
       $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
+    } else {
+      $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
     }
   })
 
