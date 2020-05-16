@@ -9,7 +9,7 @@ let locked = false;
 let newCapture = false;
 let canvas;
 
-alert("v2");
+alert("v3");
 
 if(window.orientation == 0) {
   w = 352;
@@ -41,9 +41,8 @@ function draw() {
       background(random(255), random(255), random(255));
       let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
       // capture = createCapture(constraints);
-      // capture.size(w, h);
-      stroke(0);
-      text(`${width} + ${height}`, width/2, height/2);
+      capture.size(w, h);
+      
       newCapture = false;
     }
 
@@ -83,7 +82,8 @@ function draw() {
       scale(-1, 1);
       image(capture, 0, 0);
     pop();
-    
+    stroke(0, 255, 255);
+    text(`${width} + ${height}`, width/2, height/2);
   } else {
     // do nothing
   }
