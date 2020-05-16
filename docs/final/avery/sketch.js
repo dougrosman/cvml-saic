@@ -11,11 +11,11 @@ let canvas;
 
 // 352, 288
 
-alert("v13");
+alert("v14");
 
 if(window.orientation == 0 || window.orientation == 90) {
-  w = 640;
-  h = 480;
+  w = 480;
+  h = 360;
 } else {
   alert(window.orientation);
   w = 1280;
