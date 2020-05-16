@@ -9,7 +9,7 @@ let locked = false;
 let newCapture = false;
 let canvas;
 
-alert("v5");
+alert("v6");
 
 if(window.orientation == 0) {
   w = 352;
@@ -36,10 +36,9 @@ function draw() {
     if(newCapture) {
       resizeCanvas(w, h);
       background(random(255), random(255), random(255));
-      let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
-      // capture = createCapture(constraints);
       capture.size(w, h);
-      
+      stroke(0, 255, 255);
+      text(`${width} + ${height}`, width/2, height/2);
       newCapture = false;
     }
 
@@ -96,7 +95,6 @@ function windowResized() {
     $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
   }
 }
-
 function keyPressed() {
   if(key == 's'){
     save("averyjohnson.png");
@@ -114,9 +112,8 @@ function touchMoved() {
 
 $(document).ready(function(){
 
-  if(window.orientation == 0) {
+  if(window.orientation == 0 || window.orientation == 1) {
     $(".brush-buttons-toggler").show();
-    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
   } else {
     $(".brush-buttons-toggler").hide();
     
@@ -126,7 +123,7 @@ $(document).ready(function(){
     if(window.orientation == 0){
       w = 352;
       h = 288;
-      $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
+      $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
     } else {
       w = 960;
       h = 540;
