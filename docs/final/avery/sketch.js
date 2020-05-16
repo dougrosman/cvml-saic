@@ -12,11 +12,11 @@ let shouldAlert = true;
 
 // 352, 288
 
-alert("v16");
+alert("v18");
 
 if(window.orientation == 0 || window.orientation == 90) {
-  w = 480;
-  h = 360;
+  w = 640;
+  h = 480;
 } else {
   alert(window.orientation);
   w = 1280;
@@ -42,7 +42,7 @@ function draw() {
   if(loop){
     capture.loadPixels();
 
-      if(capture.pixels.length > 0){
+      if(capture.pixels.length > 180000){
         threshold = map(sin(frameCount/10),-1,1,1,255);
 
         for (var y = 0; y < h; y++ ) {
