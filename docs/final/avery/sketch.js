@@ -12,7 +12,7 @@ let shouldAlert = true;
 
 // 352, 288
 
-alert("v15");
+alert("v16");
 
 if(window.orientation == 0 || window.orientation == 90) {
   w = 480;
@@ -42,46 +42,48 @@ function draw() {
   if(loop){
     capture.loadPixels();
 
-      threshold = map(sin(frameCount/10),-1,1,1,255);
+      if(capture.pixels.length > 0){
+        threshold = map(sin(frameCount/10),-1,1,1,255);
 
-      for (var y = 0; y < h; y++ ) {
-        for (var x = 0; x < w; x++ ) {
-          let index = (x + y*w)*4;
-          let r = capture.pixels[index+0];
-          let g = capture.pixels[index+1];
-          let b = capture.pixels[index+2];
-          let totalBrightness = r + g + b;
-          let brightness = totalBrightness/3.0;
-          
-          if(brightness < threshold) {
-            //set pixels to black
-            capture.pixels[index+0] = 0;
-            capture.pixels[index+1] = 0;
-            capture.pixels[index+2] = 0;
-          } else if(brightness > threshold01 && brightness < threshold02) {
-            //set pixels to color
-            capture.pixels[index+0] = 255;
-            capture.pixels[index+1] = 0;
-            capture.pixels[index+2] = 255;
-          } else {
-            //set pixels to white
-            capture.pixels[index+0] = 255;
-            capture.pixels[index+1] = x;
-            capture.pixels[index+2] = y;
+        for (var y = 0; y < h; y++ ) {
+          for (var x = 0; x < w; x++ ) {
+            let index = (x + y*w)*4;
+            let r = capture.pixels[index+0];
+            let g = capture.pixels[index+1];
+            let b = capture.pixels[index+2];
+            let totalBrightness = r + g + b;
+            let brightness = totalBrightness/3.0;
+            
+            if(brightness < threshold) {
+              //set pixels to black
+              capture.pixels[index+0] = 0;
+              capture.pixels[index+1] = 0;
+              capture.pixels[index+2] = 0;
+            } else if(brightness > threshold01 && brightness < threshold02) {
+              //set pixels to color
+              capture.pixels[index+0] = 255;
+              capture.pixels[index+1] = 0;
+              capture.pixels[index+2] = 255;
+            } else {
+              //set pixels to white
+              capture.pixels[index+0] = 255;
+              capture.pixels[index+1] = x;
+              capture.pixels[index+2] = y;
+            }
           }
         }
+        capture.updatePixels();
+        push();
+          translate(w, 0);
+          scale(-1, 1);
+          image(capture, 0, 0);
+        pop();
+      fill(0, 255, 255);
+      text(`${width} + ${height}`, width/2, height/2);
+      if(shouldAlert) {
+        alert(capture.pixels.length);
+        shouldAlert = false;
       }
-      capture.updatePixels();
-      push();
-        translate(w, 0);
-        scale(-1, 1);
-        image(capture, 0, 0);
-      pop();
-    fill(0, 255, 255);
-    text(`${width} + ${height}`, width/2, height/2);
-    if(shouldAlert) {
-      alert(capture);
-      shouldAlert = false;
     }
   } else {
     // do nothing
@@ -104,7 +106,7 @@ function touchMoved() {
 }
 
 function windowResized() {
-  if(window.innerWidth < w && typeof(window.orientation)==undefined) {
+  if(window.innerWidth < w && (window.orientation != 0 || window.orientation != 90)) {
     $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
   } else {
     $(".center-sketch").css("left", `unset`);
