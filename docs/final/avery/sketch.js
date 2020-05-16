@@ -9,16 +9,14 @@ let locked = false;
 let newCapture = false;
 let canvas;
 
-alert("v4");
+alert("v5");
 
 if(window.orientation == 0) {
   w = 352;
   h = 288;
-  // alert("is portrait")
 } else {
   w = 960;
   h = 540;
-  // alert("is landscape")
 }
 
 function setup() {
@@ -47,7 +45,7 @@ function draw() {
 
     capture.loadPixels();
 
-    if(capture.length > 0){
+    //if(capture.length > 0){
       threshold = map(sin(frameCount/10),-1,1,1,255);
 
       for (var y = 0; y < h; y++ ) {
@@ -83,7 +81,7 @@ function draw() {
         scale(-1, 1);
         image(capture, 0, 0);
       pop();
-    }
+    //}
     stroke(0, 255, 255);
     text(`${width} + ${height}`, width/2, height/2);
   } else {
