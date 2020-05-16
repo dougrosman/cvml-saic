@@ -3,21 +3,21 @@ let threshold = 80;
 let threshold01 = 160;
 let threshold02 = 240;
 let capture;
-let w;
-let h;
+let w = 640;
+let h = 480;
 let locked = false;
 let newCapture = false;
 let canvas;
 
-alert("v7");
+alert("v8");
 
-if(window.orientation == 0) {
-  w = 352;
-  h = 288;
-} else {
-  w = 960;
-  h = 540;
-}
+// if(window.orientation == 0) {
+//   w = 640;
+//   h = 480;
+// } else {
+//   w = 960;
+//   h = 540;
+// }
 
 function setup() {
   canvas = createCanvas(w, h);
@@ -33,14 +33,14 @@ function setup() {
 function draw() {
   if(loop){
     
-    if(newCapture) {
-      resizeCanvas(w, h);
-      background(random(255), random(255), random(255));
-      capture.size(w, h);
-      stroke(0, 255, 255);
-      text(`${width} + ${height}`, width/2, height/2);
-      newCapture = false;
-    }
+    // if(newCapture) {
+    //   // resizeCanvas(w, h);
+    //   background(random(255), random(255), random(255));
+    //   capture.size(w, h);
+    //   stroke(0, 255, 255);
+    //   text(`${width} + ${height}`, width/2, height/2);
+    //   newCapture = false;
+    // }
 
     capture.loadPixels();
 
@@ -90,12 +90,12 @@ function draw() {
 
 function windowResized() {
   if(window.orientation == 0) {
-    w = 352;
-    h = 288;
+    // w = 352;
+    // h = 288;
     $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
   } else {
-    w = 960;
-    h = 540;
+    // w = 960;
+    // h = 540;
     $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
   }
 }
@@ -126,14 +126,14 @@ $(document).ready(function(){
   $(window).on("orientationchange", function(){ 
     if(window.orientation == 0){
       
-      w = 352;
-      h = 288;
-      alert("portrait"+w+" "+h);
+      // w = 352;
+      // h = 288;
+      // alert("portrait"+w+" "+h);
       $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
     } else {
       alert("landscape");
-      w = 960;
-      h = 540;
+      // w = 960;
+      // h = 540;
       $(".center-sketch").css("left", `unset`);
     }
     newCapture = true;
