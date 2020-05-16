@@ -17,6 +17,10 @@ let mode;
 let oldFrame;
 let pattern = [160, 80, 40, 40, 40, 40, 80, 160];
 
+if(window.orientation == 0) {
+  alert("This sketch is best experienced in Landscape mode. Rotate your device to landscape mode and refresh the page.")
+}
+
 function setup() {
   let canvas = createCanvas(w, h);
   canvas.parent("#sketch");
@@ -135,20 +139,12 @@ function randomPattern() {
 }
 
 function windowResized() {
-  if(window.innerWidth < 640) {
-    $(".center-sketch").css("left", `${-(w-window.innerWidth)/4}px`);
+  if(window.innerWidth < w && (typeof(window.orientation)+"" == "undefined")) {
+    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/2)}px`);
   } else {
-    $(".center-sketch").css("left", `0`);
+    $(".center-sketch").css("left", `unset`);
   }
 }
-
-$(window).on("orientationchange", function(){  
-  if(window.innerWidth < window.innerHeight){
-    $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
-  } else {
-    $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
-  }
-})
 
 function keyPressed() {
   if(key == 's'){
@@ -170,10 +166,6 @@ function touchMoved() {
 }
 
 $(document).ready(function(){
-
-  if(window.innerWidth < 400) {
-    $(".center-sketch").css("left", `${-(w-window.innerWidth)/4}px`);
-  }
 
   $(".screen-lock").click(function(){
     $(window).scrollTop(120);

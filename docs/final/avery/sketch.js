@@ -22,7 +22,7 @@ let shouldAlert = true;
 // }
 
 if(window.orientation == 0) {
-  alert("This sketch is best experienced in Landscape mode. Rotate your device to landscape mode and refresh the page")
+  alert("This sketch is best experienced in Landscape mode. Rotate your device to landscape mode and refresh the page.")
 }
 
 let w = 640;
