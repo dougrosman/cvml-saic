@@ -94,13 +94,20 @@
 
 .main-content p {
     margin-bottom: 20px;
+    font-size: .8rem
 }
 
 #sketch {
-    margin: 30px 0;
+    margin: 30px auto;
+    width: max-content;
+    position: static;
 }
 
 .written-content {
     width: 70%;
     margin: 40px auto;
+}
+
+.center-sketch {
+    position: static;
 }

@@ -10,11 +10,13 @@ let newCapture = false;
 let canvas;
 
 if(window.orientation == 0) {
-  w = 360;
-  h = 640;
+  w = 352;
+  h = 288;
+  // alert("is portrait")
 } else {
-  w = 1280;
-  h = 720;
+  w = 960;
+  h = 540;
+  // alert("is landscape")
 }
 
 function setup() {
@@ -33,7 +35,8 @@ function draw() {
   if(loop){
     
     if(newCapture) {
-      canvas = createCanvas(w, h);
+      // canvas = createCanvas(w, h);
+      background(random(255), random(255), random(255));
       let constraints = {audio:false,video:{width:{min:320,ideal:w,max:1920},height:{min:240,ideal:h,max:1080},frameRate: {min: 1.0, max: 60.0}}};
       capture = createCapture(constraints);
       newCapture = false;
@@ -109,11 +112,11 @@ $(document).ready(function(){
   $(window).on("orientationchange", function(){
 
     if(window.orientation == 0) {
-      w = 360;
-      h = 640;
+      w = 352;
+      h = 288;
     } else {
-      w = 1280;
-      h = 720;
+      w = 960;
+  h = 540;
     }
     
     newCapture = true;
