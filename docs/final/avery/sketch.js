@@ -9,7 +9,7 @@ let locked = false;
 let newCapture = false;
 let canvas;
 
-alert("v6");
+alert("v7");
 
 if(window.orientation == 0) {
   w = 352;
@@ -90,8 +90,12 @@ function draw() {
 
 function windowResized() {
   if(window.orientation == 0) {
+    w = 352;
+    h = 288;
     $(".center-sketch").css("left", `${-Math.abs((w-window.innerWidth)/4)}px`);
   } else {
+    w = 960;
+    h = 540;
     $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
   }
 }
@@ -121,10 +125,13 @@ $(document).ready(function(){
   
   $(window).on("orientationchange", function(){ 
     if(window.orientation == 0){
+      
       w = 352;
       h = 288;
+      alert("portrait"+w+" "+h);
       $(".center-sketch").css("left", `${-Math.abs((h-window.innerWidth)/4)}px`);
     } else {
+      alert("landscape");
       w = 960;
       h = 540;
       $(".center-sketch").css("left", `unset`);
