@@ -21,7 +21,7 @@ let shouldAlert = true;
 //   h = 720;
 // }
 
-if(window.orientation == 0 && window.orientation != 0) {
+if(window.orientation == 0&& window.orientation != 0) {
   alert("This sketch is best experienced in Landscape mode. Rotate your device to landscape mode and refresh the page.")
 }
 

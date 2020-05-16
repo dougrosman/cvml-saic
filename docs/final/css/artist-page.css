@@ -104,10 +104,22 @@
 }
 
 .written-content {
-    width: 70%;
+    width: max-content;
+    max-width: 70%;
     margin: 40px auto;
 }
 
 .center-sketch {
     position: relative;
+}
+
+.artist-page-gallery {
+    width: 100%;
+}
+
+#blake-site {
+    display: block;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
 }
