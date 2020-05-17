@@ -40,17 +40,17 @@ function preload(){
   brush5_sound = loadSound('sounds/brush5_sound.wav');
 }
 
-let ratio = 1.15;
+let ratio = 1.35;
 
 function setup() {
   background("#fefefe");
-  let canvas = createCanvas(windowWidth/ratio, windowHeight/(ratio*ratio));
+  let canvas = createCanvas(windowWidth/ratio, windowHeight/ratio);
   canvas.parent("#sketch");
   imageMode(CENTER);
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth/ratio, windowHeight/(ratio*ratio));
+  resizeCanvas(windowWidth/ratio, windowHeight/ratio);
 }
 
 function draw() {

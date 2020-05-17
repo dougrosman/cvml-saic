@@ -11,6 +11,19 @@
     padding: 10px;
 }
 
+.page-title {
+    width: 100%;
+    max-width: 450px;
+    margin: 10vh auto;
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.page-title > a {
+    text-decoration: none;
+    color: black;
+}
+
 .home {
     text-decoration: none;
     color: #111;
@@ -92,9 +105,8 @@
     display: none;
 }
 
-.main-content p {
-    margin-bottom: 20px;
-    font-size: .8rem
+.main-content {
+    margin-bottom: 80px;
 }
 
 #sketch {
@@ -107,7 +119,8 @@
     width: 90%;
     max-width: 600px;
     min-width: 250px;
-    margin: 40px auto;
+    margin: 10px auto;
+    font-size: .9rem;
 }
 
 .center-sketch {
@@ -119,8 +132,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: left;
-    background-color: magenta;
 }
 
 #blake-site {
@@ -133,31 +144,66 @@
 figure {
     width: 100%;
     max-width: 512px;
-    margin: 5vw 0;
+    margin-bottom: 6vw;
 }
 
 figure video {
     width: 100%;
     max-width: 512px;
-    background-color: green;
     margin: 0 auto;
+}
+
+figure img {
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+
+    left: 50%;
+    top: 50%;
 }
 
 .embedded-youtube {
     width: 100%;
     height: 100vw;
     max-height: 512px;
+    border: 0;
 }
 
-.caption {
-    margin: 4px auto;
+figcaption {
+    margin: 10px auto;
+}
+
+figcaption > * {
+    margin: 0 auto;
     width: max-content;
     max-width: 100%;
     font-size: .75rem;
 }
 
+.caption {
+    margin: 2px auto;  
+}
+
 .warning {
     color: rgba(230, 10, 10);
     font-weight: 800;
-    margin: 0 auto; 
+}
+
+.dark {
+    background-color: #111;
+}
+
+.dark * {
+    color: #fefefe !important;
+}
+
+.modal-background {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.98);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
 }
