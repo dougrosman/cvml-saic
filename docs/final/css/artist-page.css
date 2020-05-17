@@ -115,6 +115,9 @@
 
 .artist-page-gallery {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #blake-site {
@@ -122,4 +125,15 @@
     width: 60%;
     height: 600px;
     margin: 0 auto;
+}
+
+.embedded-youtube {
+    width: 640;
+    height: 480;
+}
+
+.warning {
+    color: rgba(230, 10, 10);
+    font-weight: 800;
+    margin: 8px 0;
 }
