@@ -52,6 +52,6 @@ $(document).ready(function(){
                 _ratio = window.innerHeight/h;
             }
         }
-        return _ratio*.95;
+        return _ratio*.92;
     }
 })
