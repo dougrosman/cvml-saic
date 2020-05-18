@@ -102,14 +102,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1320px;
 }
 
 .image-card {
     position: relative;
-    flex: 1 1 30%;
+    /* flex: 1 1 33%; */
     min-width: 250px;
-    max-width: 500px;
+    width: 100%;
+    max-width: 440px;
 }
 
 .overlay {
