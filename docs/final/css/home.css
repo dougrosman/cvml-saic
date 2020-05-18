@@ -19,6 +19,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 200;
 }
 
 .patties {
@@ -52,6 +53,7 @@
     padding: 5vh 0 20vh 0;
     word-wrap: normal;
     text-align: center;
+
 }
 
 .main-menu a{
@@ -78,6 +80,17 @@
     color: #111;
     font-size: calc(1rem + 1vw);
     padding: 2px;
+}
+
+.menu-background {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fefefe;
+    top: 0;
+    left: 0;
+    z-index: 150;
 }
 
 .main-menu > a:hover {

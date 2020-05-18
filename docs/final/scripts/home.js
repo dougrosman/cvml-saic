@@ -15,6 +15,7 @@ $(document).ready(function() {
     $(".patties").click(function(){
         $(".main-menu").toggle();
         $(".main-content").toggle();
+        $(".menu-background").toggle();
         
         if(active) {
             $(window).scrollTop(0);
