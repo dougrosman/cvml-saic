@@ -30,6 +30,10 @@
     align-items: center;
 }
 
+.patties:hover {
+    cursor: pointer;
+}
+
 
 .patty {
     width: 20px;
