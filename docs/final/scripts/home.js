@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    let active = false;
     // add hover overlays to main menu cards, using the alt
     // text as the overlay text
     let imageCards = $(".image-card").children(".main-image");
@@ -11,8 +12,22 @@ $(document).ready(function() {
     }
 
     // toggle hamburger menu on mobile devices
-    $(".hamburger").click(function(){
+    $(".patties").click(function(){
         $(".main-menu").toggle();
+        $(".main-content").toggle();
+        
+        if(active) {
+            $(window).scrollTop(0);
+        } else {
+            if(typeof(window.orientation)=="undefined")
+            {
+                $(window).scrollTop(230);
+            } else {
+                $(window).scrollTop(270);
+            }
+            
+        }
+        active = !active;
     })
 
     // Create square thumbnails for non-square images on page resize

@@ -11,12 +11,29 @@
     padding: 10px;
 }
 
+.header {
+    margin: 10vh auto;
+}
+
 .page-title {
+    margin: 0 auto;
     width: 100%;
     max-width: 450px;
-    margin: 10vh auto;
     font-size: 1.25rem;
     font-weight: 200;
+}
+
+.socials {
+    font-weight: 200;
+}
+
+.socials a {
+    text-decoration: none;
+    color: black;
+}
+
+.socials a:hover {
+    color: salmon;
 }
 
 .page-title > a {
