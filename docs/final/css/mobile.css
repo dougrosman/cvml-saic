@@ -103,17 +103,23 @@
     }
 
     .written-content {
-        width: 88vw;
+        width: 92vw;
     }
 
     .center-sketch {
         position: relative;
     }
+    .grid-container{
+        margin-bottom: 4vh;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 5px;
+    }
   }
-
-
+  
   @media screen and (max-width: 840px) {
     .grid-container{
-        max-width: 97%;
+        max-width: 96%;
     }
 }

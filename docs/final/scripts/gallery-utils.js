@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     let active = false;
 
-    if(typeof(window.orientation)=="undefined") {
+    //if(typeof(window.orientation)=="undefined") {
         $("img").click(toggleImageModal);
         $(".modal-background").click(toggleModalOff);
 
@@ -16,7 +16,7 @@ $(document).ready(function(){
         //         toggleModalOff();
         //     }
         // })
-    }
+    //}
     function toggleImageModal(){
         if(!active){
             let ratio = scaleImage($(this));
@@ -56,6 +56,10 @@ $(document).ready(function(){
                 _ratio = window.innerHeight/h;
             }
         }
-        return _ratio*.92;
+        if(typeof(window.orientation)=="undefined") {
+            return _ratio*.96;
+        } else {
+            return _ratio*1.25;
+        }
     }
 })
