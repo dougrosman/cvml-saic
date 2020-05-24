@@ -1,3 +1,7 @@
+.wrapper {
+    
+}
+
 .site-subtitle {
     font-weight: 200;
     font-size: 1rem;
@@ -10,8 +14,9 @@
     font-weight: 200;
 }
 
+
 .hamburger {
-    width: max-content;
+    /* width: max-content; */
     position: relative;
     padding: 2px 4px;
     margin: 20px auto;
@@ -27,7 +32,7 @@
     height: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -35,10 +40,10 @@
     cursor: pointer;
 }
 
-
 .patty {
     width: 20px;
     height: 2px;
+    margin: 2px 0;
     background-color: salmon;
 }
 
@@ -48,12 +53,10 @@
     top: 40px;
     background-color: #fefefe;
     z-index: 100;
-    width: 100vw;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1320px;
     padding: 5vh 0 20vh 0;
     word-wrap: normal;
-    text-align: center;
-
 }
 
 .main-menu a{
@@ -78,15 +81,15 @@
 .main-link {
     text-decoration: none;
     color: #111;
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1.25rem + 1vw);
     padding: 2px;
 }
 
 .menu-background {
     display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100.2vh;
     background-color: #fefefe;
     top: 0;
     left: 0;
@@ -97,20 +100,20 @@
     color: salmon;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.main-content {
     max-width: 1320px;
+}
+    
+.gallery {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+    grid-gap: 0px;
 }
 
 .image-card {
     position: relative;
-    /* flex: 1 1 33%; */
-    min-width: 250px;
-    width: 100%;
-    max-width: 440px;
 }
 
 .overlay {

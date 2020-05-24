@@ -13,22 +13,18 @@ $(document).ready(function() {
 
     // toggle hamburger menu on mobile devices
     $(".patties").click(function(){
-        $(".main-menu").toggle();
+        $(".site-title").toggle();
+        $(".site-subtitle").toggle();
+        $(".instructor").toggle();
+        $(".about").toggle();
         $(".main-content").toggle();
+        $(".main-menu").toggle();
         $(".menu-background").toggle();
-        
-        if(active) {
-            $(window).scrollTop(0);
-        } else {
-            if(typeof(window.orientation)=="undefined")
-            {
-                $(window).scrollTop(230);
-            } else {
-                $(window).scrollTop(270);
-            }
+        // if(window.orientation==0)
+        // {
+        //     $(window).scrollTop(250);
+        // }
             
-        }
-        active = !active;
     })
 
     // Create square thumbnails for non-square images on page resize
