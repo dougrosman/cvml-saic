@@ -57,7 +57,11 @@ $(document).ready(function(){
             }
         }
         if(typeof(window.orientation)=="undefined") {
-            return _ratio*.96;
+            if(image[0].height > image[0].width) {
+                return _ratio*0.7;
+            } else {
+                return _ratio*.95;
+            }
         } else {
             return _ratio*1.25;
         }
