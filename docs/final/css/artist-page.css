@@ -12,7 +12,7 @@
 }
 
 .header {
-    margin: 10vh auto;
+    margin: 6vh auto;
 }
 
 .page-title {
@@ -25,6 +25,16 @@
 
 .socials {
     font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: salmon;
+
 }
 
 .socials a {
@@ -127,7 +137,7 @@
 }
 
 #sketch {
-    margin: 30px auto;
+    margin: 40px auto;
     width: max-content;
     /* position: static; */
 }
@@ -135,9 +145,13 @@
 .written-content {
     width: max-content;
     max-width: 840px;
-    min-width: 250px;
-    margin: 0 auto calc(30px + 8vh) auto;
+    min-width: 150px;
+    margin: 40px auto calc(30px + 5vh) auto;
     font-size: .9rem;
+}
+
+.written-content p {
+    margin-bottom:  20px;
 }
 
 .section-title {
@@ -233,4 +247,11 @@ figcaption > * {
 
 .blake {
     margin: -2px 0;
+}
+
+.about-written-content {
+    font-size: calc(1rem + .5vw);
+    margin: 0 auto;
+    width: 840px;
+    max-width: 94vw;
 }

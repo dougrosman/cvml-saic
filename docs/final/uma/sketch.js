@@ -44,7 +44,7 @@ let ratio = 1.35;
 
 function setup() {
   background("#fefefe");
-  let canvas = createCanvas(windowWidth/ratio, windowHeight/ratio);
+  let canvas = createCanvas(windowWidth/ratio, windowHeight/(ratio*ratio));
   canvas.parent("#sketch");
   imageMode(CENTER);
 }

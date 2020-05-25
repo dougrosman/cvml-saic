@@ -16,6 +16,7 @@ let NumStrip;
 let mode;
 let oldFrame;
 let pattern = [160, 80, 40, 40, 40, 40, 80, 160];
+let locked = false;
 
 if(window.orientation == 0) {
   alert("This sketch is best experienced in Landscape mode. Rotate your device to landscape mode and refresh the page.")

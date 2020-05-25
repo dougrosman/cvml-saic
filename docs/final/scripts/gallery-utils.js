@@ -66,4 +66,18 @@ $(document).ready(function(){
             return _ratio*1.25;
         }
     }
+
+    let footerCSS = {
+        position: "relative",
+        bottom: "5px",
+        left: "50%",
+        transform: "translate(-50%, 0)",
+        zIndex: "100",
+        textAlign: "center",
+        fontSize: ".65rem"
+    }
+
+    // footer
+    $("body").append("<footer><p>© Doug Rosman 2020</p></footer>");
+    $("footer").css(footerCSS);
 })
