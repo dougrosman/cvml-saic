@@ -11,6 +11,26 @@
     font-weight: 200;
 }
 
+.top-bar{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, 0);
+    display: flex;
+    width: 96vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.home {
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+    opacity: .45;
+}
+
 
 .hamburger {
     /* width: max-content; */
